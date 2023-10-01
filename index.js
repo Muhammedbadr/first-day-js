@@ -203,15 +203,31 @@ console.log(w.endsWith("d" ,5))
 /* Quiz time */
 let t = "Elzero web school"
 
-console.log(t.charAt(2).toUpperCase()+t.slice(2 , 6));/* first*/
+console.log(t.charAt(2).toUpperCase()+t.slice(2 , 6));/* First */
 
-console.log(t.charAt(13).repeat(8).toUpperCase())/* scend */
+console.log(t.charAt(13).repeat(8).toUpperCase())/* Second */
 
-console.log(t.slice(0 ,6).split());
+console.log(t.slice(0 ,6).split());/* Third */
 
-console.log(t.substr(0,6)+t.substr(10,17));
+console.log(t.substr(0,6)+t.substr(10,17));/* Fourth */
 
-console.log(t.slice(0,1 ).toLowerCase()+t.slice(1,16).toUpperCase()+ t.slice(16,17).toLocaleLowerCase());
+console.log(t.slice(0,1 ).toLowerCase()+t.slice(1,16).toUpperCase()+ t.slice(16,17).toLocaleLowerCase());/* Fifth */
+/* finsh */ 
+
+
+/* #################################### */
+console.log(10 == "10");/* false */
+console.log(10 != "10");/* true */
+
+console.log(10 === "20");
+console.log(10 !== "10");
+console.log(10 !== 10)
+
+console.log(10 <= 10)
+console.log(10 > 100);
+
+console.log("omer" == "ali");
+console.log(typeof"omer" == typeof"ali");
 
 
 
