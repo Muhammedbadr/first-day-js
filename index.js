@@ -161,8 +161,8 @@ console.log(Thename.trim().charAt(5).toUpperCase());
 /* #################################### */
 let z = "A h m a d Muhammad Nur Amer Aisha" ;
 
-console.log(z.indexOf("Zoldik"));
-console.log(z.indexOf("Zoldik", 8));
+console.log(z.indexOf("muhammad"));
+console.log(z.indexOf("Nur", 8));
 
 console.log(z.indexOf("l"));
 console.log(z.lastIndexOf("l"));
@@ -172,7 +172,7 @@ console.log(z.slice( -1));
 
 console.log(z.repeat(5))
 
-console.log(z.split(" " , ))
+console.log(z.split(" "  ))
 /* #################################### */
 
 
@@ -184,7 +184,37 @@ console.log (w.substring(2,6));
 console.log (w.substring(6,2));
 console.log(w.substring(-10 , 6));
 console.log(w.substring(w.length - 5));
+
+console.log(w.substr(0,5));
+
+console.log(w.includes("Nur"));
+console.log(w.includes("Nur" , ));
+
+console.log(w.startsWith("A",2))/* false */
+console.log(w.startsWith("Ahmad",0))/* true */
+
+console.log(w.endsWith("Ahmad"))/* false */
+console.log(w.endsWith("a"))/* true */
+console.log(w.endsWith("d" ,5)) 
 /* #################################### */
+
+
+
+/* Quiz time */
+let t = "Elzero web school"
+
+console.log(t.charAt(2).toUpperCase()+t.slice(2 , 6));/* first*/
+
+console.log(t.charAt(13).repeat(8).toUpperCase())/* scend */
+
+console.log(t.slice(0 ,6).split());
+
+console.log(t.substr(0,6)+t.substr(10,17));
+
+console.log(t.slice(0,1 ).toLowerCase()+t.slice(1,16).toUpperCase()+ t.slice(16,17).toLocaleLowerCase());
+
+
+
 
 
 
