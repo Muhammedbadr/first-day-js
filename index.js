@@ -216,6 +216,7 @@ console.log(t.slice(0,1 ).toLowerCase()+t.slice(1,16).toUpperCase()+ t.slice(16,
 
 
 /* #################################### */
+
 console.log(10 == "10");/* false */
 console.log(10 != "10");/* true */
 
@@ -228,16 +229,62 @@ console.log(10 > 100);
 
 console.log("omer" == "ali");
 console.log(typeof"omer" == typeof"ali");
+/* 
+    != Not
+    && = and 
+    || = or 
+*/
+console.log(10 == "10" && 10 > 8 && 10 >10 );
+console.log(10 == "10" || 10 > 80 || 10 >50 );
+/*####################################*/
 
 
 
 
+/*####################################*/
+let price1 = 100;
+let discount1= false;
+let discountAmount1 = 50 ;
+let country1 = "KSA" ;
+
+if (discount1 === true){
+    price1 -= discountAmount1;// price = price - discountAmount 
+}
+else if (country1 === "Russia" ){
+    price1 -= discountAmount1
+}
+else if (country1 === "U.S.A" ){
+    price1 = price1 - 10
+}
+else {
+    price1 -= 5
+}
+
+console.log(price1)
+
+
+/*#########*/
 
 
 
+let price2 = 100;
+let discount2= false;
+let discountAmount2 = 20 ;
+let country2 = "Russia" ;
+let student = true ;
 
+if (discount2 === true){
+    price2 -= discountAmount2;// price = price - discountAmount 
 
+}
+else if (country2 === "Russia" ){
 
+    if (student === true){
+        price2 -= discountAmount2 + 40;
+    }
+    else {
+        price2 -= discountAmount2 + 10;
+    }
+}
 
-
-
+console.log(price2)
