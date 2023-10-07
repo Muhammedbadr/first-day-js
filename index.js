@@ -263,7 +263,7 @@ else {
 console.log(price1)
 
 
-/*#########*/
+/*#####################*/
 
 
 
@@ -288,3 +288,19 @@ else if (country2 === "Russia" ){
 }
 
 console.log(price2)
+
+
+/*#####################*/
+
+let thename = "muhammad";
+let theGender = "male";
+let theage = "23";
+
+if(thename === "muhammad"){
+    document.write("Mr")   
+}
+else{
+    document.write("Mrs")
+}
+
+
