@@ -46,7 +46,7 @@ document.write( a + "  " + b + " \n " + c);
 console.log(a + "  \"\" "+ b + "\n "+c)  
 
 console.log( ` ${a}  " "
- ${b}  ${c} ${100 * 23}`);
+ ${b}  ${c} $.100.* 23}`);
 
 
 /* #################################### */
@@ -177,7 +177,7 @@ console.log(z.split(" "  ))
 
 
 /* #################################### */
-let w = "Ahmad Muhammad Nur Amer Aisha" ;
+let w = "Ahmad Muhammad  Nur Amer Aisha" ;
 console.log(w.length)
 
 console.log (w.substring(2,6));
@@ -290,17 +290,152 @@ else if (country2 === "Russia" ){
 console.log(price2)
 
 
-/*#####################*/
+/*#########################*/
 
-let thename = "muhammad";
+let thename = "jan";
 let theGender = "male";
 let theage = "23";
+let help = "How can help you"
+let age = "1 "
 
 if(thename === "muhammad"){
-    document.write("Mr")   
+    console.log("Mr")   
 }
 else{
-    document.write("Mrs")
+    console.log("Mrs")
+}
+
+// ? if true , : if folse
+theGender === "male" ? console.log("mr") : console.log("mrs");
+
+let result = theGender === "male" ?"ms brodn" : "mrs";
+
+document.write(result);
+
+
+console.log(theGender === "male" ? "ms brodn" : "mrs");
+
+
+console.log(`Hello ${thename === thename ? thename : "Sir" } ${help}`);
+
+age < 10  && age > 5 ? console.log("boy") : age > 20 && age < 60 ? console.log("man") : age > 60 ? console.log("old-man" ): console.log("baby") 
+
+
+/*####################################*/
+
+console.log(Boolean(100))
+console.log(Boolean(-100))
+console.log(Boolean(0))
+console.log(Boolean(""))
+console.log(Boolean(null))
+
+let price = 0;
+
+console.log(`The chicken price ${ price || 50}` )
+console.log(`The chicken price ${ price ?? 50}` ) // console.log(Boolean(0)) 
+
+/*####################################*/
+
+// Quiz Time 
+
+let st = "Elzero Web school";
+
+if((st.length*2).toString() === "34"){
+    console.log("Good");
+};
+
+if (st.charAt(st.indexOf("W")) === "W"){
+ console.log("Good");
+}; 
+
+if (st !== "string"){
+ console.log("Good");
+} 
+
+if (typeof st.length === "number"){
+    console.log("Good");
+} 
+
+if (st.substring(0,6).repeat(2) === "ElzeroElzero"){
+    console.log("Good");
+} 
+
+// finsh
+
+
+// ################################## 
+
+let day = 4 ;
+
+switch(day){
+    case 0:
+        console.log("Saturday")
+    break;
+    case  1 :
+        console.log("Sunday")
+    break;
+    case  2 :
+    case 3 :
+        console.log("Monday")
+    break;
+    default:
+        console.log("error")
+
+}
+
+// ################################## 
+
+let job = "IT"
+let salary = 0 ;
+
+if (job === "Manager"){
+    salary = 8000;
+}
+else if (job === "IT" || job === "suppert"){
+    salary = 6000;
+}
+else if (job === "Developer" || job === "Designer"){
+    salary = 7000;
+}else{
+    salary = 4000;
+}
+console.log(salary)
+
+
+
+
+let holiday = 7;
+let mony =0 ;
+
+switch(holiday){
+    case 0 :
+        mony = 8000;
+        console.log(`My salary ${mony}`);
+        break;
+    case 1 :
+    case 2 :
+        mony= 7000;
+        console.log(`My salary ${mony}`);
+        break;
+    case 3 :
+    case 4 :
+        mony= 6000;
+        console.log(`My salary ${mony}`);
+        break;
+    default:
+        mony= 2000;
+        console.log(`Min salary  ${mony}`)
 }
 
 
+// ################################## 
+
+let myFriends = ["Muhammad" , "Ahmed" , "Ali" , " islam", ["sara" , " jan"]];
+
+console.log(`Hello ${myFriends[3][2]}` )
+console.log(`Hello ${myFriends[4][1][1]}`)
+
+console.log(myFriends);
+myFriends[4][1]="yusuf"
+console.log(myFriends);
+console.log(Array.isArray(myFriends));
