@@ -430,7 +430,7 @@ switch(holiday){
 
 // ################################## 
 
-let myFriends = ["Muhammad" , "Ahmed" , "Ali" , " islam", ["sara" , " jan"]];
+let myFriends = [  "Muhammad" , "Ahmed" , "Ali" , " islam" , "Ali" , " islam"];
 
 console.log(`Hello ${myFriends[3][2]}` )
 console.log(`Hello ${myFriends[4][1][1]}`)
@@ -439,3 +439,48 @@ console.log(myFriends);
 myFriends[4][1]="yusuf"
 console.log(myFriends);
 console.log(Array.isArray(myFriends));
+
+console.log(myFriends.length); // 6
+
+let mybrother = [  "Muhammad" , "Ahmed" , "Ali" , " islam" , "Ali" , " islam"];
+mybrother.length=3;
+console.log(mybrother);
+
+console.log(mybrother.length); // 
+
+let myFamily = [  "Muhammad" , "Ahmed" , "Ali" , " islam" , "Ali" , " islam"];
+//
+myFamily.unshift("sssss" , "islam")
+console.log(myFamily);
+myFamily.push ("omar" , "sssss")
+console.log(myFamily);
+// 
+let first = myFamily.shift ()
+console.log(myFamily);
+console.log(`First Name is ${first}`);
+
+let lest  = myFamily.pop ()
+console.log(myFamily);
+console.log(`lest Name is ${lest}`);
+
+// ################################## 
+
+
+
+
+let boy = [  "Ali" , "Ahmed" , "Ali" , "islam" , "Ali"  , " mert", "jan" , "Ali"  , " mert"];
+
+
+
+console.log(boy.indexOf("jan"))
+console.log(boy.indexOf("jan", 4))
+
+console.log(boy.lastIndexOf("Ali"))
+
+console.log(boy.includes("Ali"))
+console.log(boy.includes("Ali" , 2));
+
+if (boy.indexOf("hhh")=== -1){
+    console.log("Not Found")
+}
+
