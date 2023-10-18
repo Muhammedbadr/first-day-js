@@ -466,8 +466,6 @@ console.log(`lest Name is ${lest}`);
 // ################################## 
 
 
-
-
 let boy = [  "Ali" , "Ahmed" , "Ali" , "islam" , "Ali"  , " mert", "jan" , "Ali"  , " mert"];
 
 
@@ -480,7 +478,24 @@ console.log(boy.lastIndexOf("Ali"))
 console.log(boy.includes("Ali"))
 console.log(boy.includes("Ali" , 2));
 
-if (boy.indexOf("hhh")=== -1){
+if (boy.indexOf("Ali")=== 1){
     console.log("Not Found")
-}
+};
+
+
+// ################################## 
+
+
+let boyage = [  "Ali" , 44 , "Ahmed" , "415" , "Ali" , 43, "islam" , -22 , "Ali" ,12 ];
+console.log(boyage);
+console.log(boyage.sort().reverse());
+console.log(boyage.sort().reverse());
+
+// ################################## 
+let family = [  "Ali" , "yousuf" , "nasa" , "jak" ]
+console.log(family.slice);
+console.log(family.slice(-2)); 
+console.log(family.slice(-0 , -3)); 
+// console.log(family.slice(4));
+
 
