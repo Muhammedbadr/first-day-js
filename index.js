@@ -288,9 +288,9 @@ else if (country2 === "Russia" ){
 }
 
 console.log(price2)
+// ################################## 
 
-
-/*#########################*/
+// ################################## 
 
 let thename = "jan";
 let theGender = "male";
@@ -319,10 +319,9 @@ console.log(theGender === "male" ? "ms brodn" : "mrs");
 console.log(`Hello ${thename === thename ? thename : "Sir" } ${help}`);
 
 age < 10  && age > 5 ? console.log("boy") : age > 20 && age < 60 ? console.log("man") : age > 60 ? console.log("old-man" ): console.log("baby") 
-
+// ################################## 
 
 /*####################################*/
-
 console.log(Boolean(100))
 console.log(Boolean(-100))
 console.log(Boolean(0))
@@ -333,9 +332,9 @@ let price = 0;
 
 console.log(`The chicken price ${ price || 50}` )
 console.log(`The chicken price ${ price ?? 50}` ) // console.log(Boolean(0)) 
-
 /*####################################*/
 
+// ################################## 
 // Quiz Time 
 
 let st = "Elzero Web school";
@@ -361,10 +360,9 @@ if (st.substring(0,6).repeat(2) === "ElzeroElzero"){
 } 
 
 // finsh
-
-
 // ################################## 
 
+// ################################## 
 let day = 4 ;
 
 switch(day){
@@ -382,9 +380,10 @@ switch(day){
         console.log("error")
 
 }
-
 // ################################## 
 
+
+// ################################## 
 let job = "IT"
 let salary = 0 ;
 
@@ -426,10 +425,10 @@ switch(holiday){
         mony= 2000;
         console.log(`Min salary  ${mony}`)
 }
+// ################################## 
 
 
 // ################################## 
-
 let myFriends = [  "Muhammad" , "Ahmed" , "Ali" , " islam" , "Ali" , " islam"];
 
 console.log(`Hello ${myFriends[3][2]}` )
@@ -462,13 +461,11 @@ console.log(`First Name is ${first}`);
 let lest  = myFamily.pop ()
 console.log(myFamily);
 console.log(`lest Name is ${lest}`);
-
 // ################################## 
 
 
+// ################################## 
 let boy = [  "Ali" , "Ahmed" , "Ali" , "islam" , "Ali"  , " mert", "jan" , "Ali"  , " mert"];
-
-
 
 console.log(boy.indexOf("jan"))
 console.log(boy.indexOf("jan", 4))
@@ -481,15 +478,16 @@ console.log(boy.includes("Ali" , 2));
 if (boy.indexOf("Ali")=== 1){
     console.log("Not Found")
 };
-
-
 // ################################## 
 
 
+// ################################## 
 let boyage = [  "Ali" , 44 , "Ahmed" , "415" , "Ali" , 43, "islam" , -22 , "Ali" ,12 ];
 console.log(boyage);
 console.log(boyage.sort().reverse());
-console.log(boyage.sort().reverse());
+console.log(boyage.reverse());
+// ################################## 
+
 
 // ################################## 
 let family = [  "Ali" , "yousuf" , "nasa" , "jak" ]
@@ -497,5 +495,37 @@ console.log(family.slice);
 console.log(family.slice(-2)); 
 console.log(family.slice(-0 , -3)); 
 // console.log(family.slice(4));
+family.splice(0 , 2 ,"smmer" ,"mhammad");
+console.log(family) ;
+// ################################## 
+
+
+// ################################## 
+let myboy = [  "Ali" , "yousuf" , "nasa" , "jak" ]
+let my_bro_boy = [  "Ali" , "yousuf" , "nasa" , "jak" ]
+let my_sis_boy = [  "Ali" , "yousuf" , "nasa" , "jak" ]
+
+let allfmaily = my_bro_boy.concat(myboy,my_sis_boy , "Gameel" , [1,2,3,4,5]);
+console.log(allfmaily);
+
+console.log(allfmaily.join());
+console.log(allfmaily.join(""));
+console.log(allfmaily.join("|"));
+console.log(allfmaily.join("|").toUpperCase());
+// ################################## 
+
+
+// ################################## 
+let zero = 0 ;
+let counter = 3 ;
+let my = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer"];
+// 1
+console.log(my.slice(zero,++counter).reverse());
+// 2
+console.log(my.slice(my.shift(),counter -2).reverse());
+// 3
+console.log(my.unshift("Elzero"));
+
+
 
 
