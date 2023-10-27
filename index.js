@@ -429,7 +429,7 @@ switch(holiday){
 
 
 // ################################## 
-let myFriends = [  "Muhammad" , "Ahmed" , "Ali", " islam" , "Ali" , " islam"];
+let myFriends = [  "Muhammad" , "Ahmed" , "Ali" , " islam" , "Ali" , " islam"];
 
 console.log(`Hello ${myFriends[3][2]}` )
 console.log(`Hello ${myFriends[4][1][1]}`)
@@ -490,7 +490,7 @@ console.log(boyage.reverse());
 
 
 // ################################## 
-let family = [  "Ali" , "yousuf" , "nasa" , "jak" ]
+let family = [  "Ali" , "yousuf" , "nasa" , "jak" ];
 console.log(family.slice);
 console.log(family.slice(-2)); 
 console.log(family.slice(-0 , -3)); 
@@ -516,12 +516,39 @@ console.log(allfmaily.join("|").toUpperCase());
 
 
 // ################################## 
+// Quize
 let zero = 0 ;
 let counter = 3 ;
-let my = [ ,"ahmed","mazero","Elham","osama","gamal","ameer"];
+let my = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer"];
 // 1
 console.log(my.slice(zero,++counter).reverse());
 // 2
 console.log(my.slice(my.shift(),counter -2).reverse());
 // 3
-console.log(my[2].slice(0,2),my[1].slice(-4));
+console.log(my.unshift("Elzero"));
+// ################################## 
+
+//####################################
+//loop
+//for
+
+for (let i = 0; i < 10; i++){
+    console.log(i)
+}
+
+let myfemily = [  "Ali" , "yousuf" , "nasa" , "jak" , "sjak"];
+
+// console.log(myfemily[0]);
+// console.log(myfemily[1]);
+// console.log(myfemily[2]);
+// console.log(myfemily[3]);
+// console.log(myfemily[4]);
+// console.log(myfemily[5]);
+
+//while loop
+for(let i = 0 ; i < 5 ; i++){
+     console.log(myfemily[i]);
+}
+
+
+
