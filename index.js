@@ -531,12 +531,30 @@ console.log(my.unshift("Elzero"));
 //####################################
 //loop
 //for
+let myfemily = [ 1,2 ,"Ali" , "yousuf" , "nasa" , "jak" , "sjak"];
+let onlyname=[]
+// if (typeof myfemily[0] === 'string'){
+//     onlyname.push(myfemily[0])
+// }
 
-for (let i = 0; i < 10; i++){
-    console.log(i)
+// if (typeof myfemily[1] === 'string'){
+//     onlyname.push(myfemily[1])
+// }
+
+// if (typeof myfemily[2] === 'string'){
+//     onlyname.push(myfemily[2])
+// }
+
+// if (typeof myfemily[3] === 'string'){
+//     onlyname.push(myfemily[3])
+// }
+// while loop
+for(let s = 0 ; s < myfemily.length ; s++){
+    if(typeof myfemily[s] ==="string")
+    {onlyname.push(myfemily[s])
+    ;}
 }
-
-let myfemily = [  "Ali" , "yousuf" , "nasa" , "jak" , "sjak"];
+console.log(onlyname)
 
 // console.log(myfemily[0]);
 // console.log(myfemily[1]);
@@ -544,11 +562,83 @@ let myfemily = [  "Ali" , "yousuf" , "nasa" , "jak" , "sjak"];
 // console.log(myfemily[3]);
 // console.log(myfemily[4]);
 // console.log(myfemily[5]);
-
 //while loop
-for(let i = 0 ; i < 5 ; i++){
+for(let i = 0 ; i< myfemily.length ; i++){
      console.log(myfemily[i]);
 }
 
+//####################################
+let products = ["key","PS","pan","pad","maus" , 2,3,4,5];
+let mdein = ["ruusa","america","palctin","mroko","shapon" ];
+let colors = ["red","blue","green","ornge"];
+let model = [2020,2023];
+
+for(let r=0; r< products.length; r++){
+    console.log("#".repeat(15))
+    console.log(`# ${products[r]}`)
+    console.log("#".repeat(15))
+    console.log("colors :")
+    for(let j=0 ; j < colors.length; j++){
+        console.log(`- ${colors[j]}`)
+    }
+    console.log("model :")
+    for(let m=0 ; m < model.length; m++){
+        console.log(`- ${model[m]}`)
+    }
+}
+console.log("#".repeat(40))
+//###################
+for(let g = 0 ; g < products.length; g++){
+    console.log(products[g])
+    if (products[g] === "pad"){
+        break;
+    }
+}
+console.log("#".repeat(40))
+//###################
+for(let b = 0 ; b < products.length; b++){
+    if (typeof products[b] === "number"){
+        continue;
+    }
+    console.log(products[b])
+}
+//###################
+for(let c = 0 ; c < products.length; c++){
+    if (typeof products[c] === "string"){
+        continue;
+    }
+    console.log(products[c])
+}
+//###################
+mainLoop : for(let k=0 ; k < mdein.length; k++){
+    console.log(mdein[k]);
+
+    nestedlopp : for(let v=0 ; v < colors.length; v++){
+        console.log(`- ${colors[v]}`)
+        if(colors[v] === "green"){
+            break mainLoop ;
+        }
+    }
+}
+//###################
+let ms = 0 ;
+for (;;){
+    console.log(mdein[ms]);
+    ms++
+    if(ms === mdein.length )break;
+}
+//###################
+
+let showcout = 5 ;
+let h = 0
+
+document.write(`<h1> show ${showcout} proja </h1>`)
+for(;  h < showcout; h++) {
+    document.write(`<div>`)
+    document.write(`<h3 >[${h + 1}] ${products[h]} </h3>`)
+    document.write(`<p >${colors.join(" - ")} </p>`)
+    document.write(`</div>`)
+}
 
 
+//###################//###################
