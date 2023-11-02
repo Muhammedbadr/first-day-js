@@ -373,18 +373,18 @@ switch(day){
         console.log("Sunday")
     break;
     case  2 :
-    case 3 :
-        console.log("Monday")
-    break;
-    default:
-        console.log("error")
+        case 3 :
+            console.log("Monday")
+        break;
+        default:
+            console.log("error")
 
-}
-// ################################## 
+    }
+    // ################################## 
 
 
-// ################################## 
-let job = "IT"
+    // ################################## 
+    let job = "IT"
 let salary = 0 ;
 
 if (job === "Manager"){
@@ -639,6 +639,27 @@ for(;  h < showcout; h++) {
     document.write(`<p >${colors.join(" - ")} </p>`)
     document.write(`</div>`)
 }
+//#################
 
+let y = 0 ;
+do  {  console.log(y);
+    y++;
+}
+while(false){
+  
 
+};
 //###################//###################
+
+// qize 
+let name = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer"];
+let myclaename = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer" , "asha" , "musa"];
+
+document.write(`<div> we have X Admins</div>`)
+
+document.write(`<h4>Team Members :</h4>`);
+for(q = 0 ; q < myclaename ; q++ ){
+document.write(`<div>`)
+document.write(`</div>`)
+}
+
