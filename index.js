@@ -652,14 +652,72 @@ while(false){
 //###################//###################
 
 // qize 
-let name = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer"];
-let myclaename = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer" , "asha" , "musa"];
+let myAdmins = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer"];
+let myEmployees = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer" , "asha" , "musa"];
 
-document.write(`<div> we have X Admins</div>`)
 
-document.write(`<h4>Team Members :</h4>`);
-for(q = 0 ; q < myclaename ; q++ ){
-document.write(`<div>`)
-document.write(`</div>`)
+document.write(`<h1>we have ${myAdmins.length} admins</h1> `)
+document.write(`<hr>`)
+
+
+
+
+let cout = 4 ;
+let x = 0
+
+document.write(`<h1> show ${cout} proja </h1>`)
+for(;  x < cout; x++) {
+    document.write(`<div>`)
+    document.write(`<h3 > Team Members: </h3>`)
+    for( let l = 0 ; l < colors.length ; l++)
+    document.write(`<p >[${l + 1}] ${myEmployees[l]} </p>`)
+    document.write(`<hr>`)
+    document.write(`</div>`)
 }
+//###################//###################
+// function 
 
+function sayhello(userName){
+    console.log(`hi ${userName}`)
+}
+sayhello("Muhammad");
+sayhello("Ali");
+sayhello("Jan");
+
+//############
+function sayhi(userName , age){
+    if (age < 18 ){
+        console.log(`Plase you can't ues the app , You are under 18 years of age `)
+    }else{
+    console.log(`hi ${userName} your age is ${age} ` )
+}
+}
+sayhi("Muhammad" , 45);
+sayhi("Ali", 12 );
+sayhi("Jan" , 18);
+
+//############
+
+function generateYears(start , end , exclude){
+    for (let index = start; index <= end; index++) {
+        if (index === exclude){
+            continue;
+        }
+        console.log(index)
+    }
+}
+generateYears(2007,2023 ,2020);
+//############
+console.log("#".repeat(15))
+function Namber(start , end ){
+
+    for (let yon = start; yon <= end; yon++) {
+        console.log(yon)
+        if (yon === 10){
+            return;
+        }
+    }
+    
+
+}
+Namber( 0 , 20);
