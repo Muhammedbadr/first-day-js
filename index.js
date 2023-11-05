@@ -717,7 +717,30 @@ function Namber(start , end ){
             return;
         }
     }
-    
-
 }
 Namber( 0 , 20);
+//##############
+console.log("#".repeat(15))
+
+function math(ali , jan ){
+    return ali + jan ;
+}
+let hg = math(15, 16 );
+console.log(hg+50)
+//##############
+function mykids( userNames = "plase enter your userNames",ages = "plase enter your age"){
+    // if(ages === undefined){
+    //     ages= "no info"
+    // ages = ages || "no info"
+    console.log(`hi ${userNames} your age is ${ages}`)
+}
+console.log(mykids("jan"))
+//##############
+function Nambers(...number ){
+    let results = 0 ; 
+    for(let hgh  = 0; hgh < number.length; hgh++ ){
+        results += number[hgh]
+    }
+    return `final result is ${results}`
+}
+console.log(Nambers(10,10,10,10,100,100))
