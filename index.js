@@ -1,3 +1,11 @@
+/* 
+    ! = Not
+    && = and 
+    || = or 
+    ? if true 
+    : if false
+*/
+
 window.onload = function(){
     document.querySelector("h1").style.color = "blue";
 };
@@ -230,9 +238,11 @@ console.log(10 > 100);
 console.log("omer" == "ali");
 console.log(typeof"omer" == typeof"ali");
 /* 
-    != Not
+    ! = Not
     && = and 
     || = or 
+    ? if true 
+    : if fales
 */
 console.log(10 == "10" && 10 > 8 && 10 >10 );
 console.log(10 == "10" || 10 > 80 || 10 >50 );
@@ -305,7 +315,7 @@ else{
     console.log("Mrs")
 }
 
-// ? if true , : if folse
+// ? if true , : if fales
 theGender === "male" ? console.log("mr") : console.log("mrs");
 
 let result = theGender === "male" ?"ms brodn" : "mrs";
@@ -736,7 +746,9 @@ function mykids( userNames = "plase enter your userNames",ages = "plase enter yo
 }
 console.log(mykids("jan"))
 //##############
+
 function Nambers(...number ){
+    //console.log(Araay.isArray(number))
     let results = 0 ; 
     for(let hgh  = 0; hgh < number.length; hgh++ ){
         results += number[hgh]
@@ -744,3 +756,165 @@ function Nambers(...number ){
     return `final result is ${results}`
 }
 console.log(Nambers(10,10,10,10,100,100))
+//############
+
+function showInfo(uName = "un" ,age="un", time = 0 , show= "Yes" , ...skills){
+    document.write(`<div>`)
+    document.write(`<h3> Welcome,${uName} </h3>`)
+    document.write(`<p> Age ${age}</p>`)
+    document.write(`<p> Hour : ${time}</p>`)
+    if (show === "yes"){
+        if(skills.length > 0 ){
+            document.write(`<p> skills : ${skills.join(" and ")}</p>`)
+        }
+        else{
+            document.write(`<p> skills :No skils</p>`)
+        }
+    }
+    else{
+        document.write(`<p> Skills is ematy</p>`)
+    }
+
+    document.write(`</div>`)
+}
+
+showInfo(
+    "ali", 65 , "5:00" ,
+    "yes" ,
+        "html" , "css" , "js"
+ )
+ //############
+ function showDetails(...data) {
+    let 
+      a = 0,
+      b = 0 ,
+      c = 0 ;
+    for (let ind = 0; ind < 3; ind++) {
+        typeof data[ind] === 'string' ? (a = data[ind])
+        : typeof data[ind] === 'number' ? (b = data[ind])
+         ( b = b || "no info")
+        : data[ind] === false ? (c = 'Not Availble')
+        : (c = 'Availble');
+    }
+    return console.log(`Hi ,${a}, Your Age Is ${b} ,You Are ${c} For Hire`);
+
+ }
+ showDetails(false , 'Mohamed');
+
+
+ //############
+let calculater =function (apple , panepinl) {
+    return apple + panepinl;
+}
+console.log(calculater(10 , 55 ))
+ //#######
+function sayhello(){
+    console.log("hello jan") 
+}
+document.getElementById("show").onclick = sayhello ;
+//#######
+setTimeout( function (){
+    console.log("good jood jap man")
+}, 2000);
+//######
+// export 1
+function saymessage(fName , IName){
+    let  message  = `hello`;
+    function concamessage(){
+        message = `${message} ${fName} ${IName} `
+    }
+    concamessage()
+    
+    return message;
+}
+console.log(saymessage("ali" , "badr"))
+
+// export 2
+
+function saymessage2(fName , IName){
+    let  message  = `hello`;
+    function concamessage(){
+        return `${message} ${fName} ${IName} `
+    }
+    return concamessage();
+}
+console.log(saymessage2("jan" , "nonot"))
+
+// export 3
+
+function saymessage3(fName , IName){
+    let  message  = `hello`;
+    function concamessage(){
+        function getfullname(){
+            return `${fName} ${IName} `
+        }
+        return `${message} ${getfullname()}`
+    }
+    return concamessage();
+}
+console.log(saymessage3("yusuf" , "jon"))
+
+
+//######
+
+function  print(){
+    return 10 
+}
+console.log(print())
+//seam
+let print1 = function(){
+    return 20;
+};
+console.log(print1())
+//#######
+let print2 = () => 30;
+console.log(print2())
+//######
+let print3 = function(num){
+    return num; };
+console.log(print3(50))
+//#######
+let print4= num =>  num ;
+console.log(print4(50))
+//#######
+let print5= (num1,num2) => num1 + num2 ;
+console.log(print5(50 , 50))
+
+//############
+var one = 1;
+let two = 2;
+
+function showtext(){
+    var one = 100
+    var two = 200
+    console.log(`From Global ${one}`)
+    console.log(`From Global ${two}`)
+}
+showtext( )
+console.log(`From Global ${one}`)
+console.log(`From Global ${two}`)
+//######
+function pareet(){
+    let height = 11
+    function child(){
+        console.log(height)
+    
+        function in_low(){
+            console.log(`hi ${height}`)
+        }
+        in_low ()
+    }
+    child  ()  
+} 
+pareet()
+
+// quiz time 
+
+let nemes = (...string) =>`String [${string.join("], [")}] => Done`;
+console.log(nemes("omar" , "omar" , "omar" , "omar" , "omar" , "omar"));
+
+let myNumbers =[ 20,50,10,60];
+let calc = (one,two,...nume) => one + two + nume[0];
+console.log(calc (myNumbers[2], myNumbers[0], myNumbers[1] ))
+
+//finsh 
