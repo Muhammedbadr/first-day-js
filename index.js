@@ -669,9 +669,6 @@ let myEmployees = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer" , "a
 document.write(`<h1>we have ${myAdmins.length} admins</h1> `)
 document.write(`<hr>`)
 
-
-
-
 let cout = 4 ;
 let x = 0
 
@@ -918,3 +915,50 @@ let calc = (one,two,...nume) => one + two + nume[0];
 console.log(calc (myNumbers[2], myNumbers[0], myNumbers[1] ))
 
 //finsh 
+//exampl 1
+let myNums = [1,2,3,4,5,6 ];
+let mybro = ["ali" ];
+let newArray = []
+for(let ol = 0 ; ol < myNums.length ; ol++ ){
+    newArray.push(myNums[ol] + myNums[ol]);}
+console.log(newArray);
+//same idey with marginTop: 
+
+//exampl 2
+let addsalf =  myNums.map((elemant) => elemant + elemant)
+console.log(addsalf)
+
+//exampl 3
+function addition(ele){
+    return ele + ele;
+}
+
+//#################
+
+let add = myNums.map(addition)
+console.log(add)
+// one
+let swapp = "elZERo"
+// two
+let nuber = [1. -10 , -20 , 15 , 100 , -100 ]
+// three
+let ignor = "ZolDik534"
+
+// one
+let sw = swapp.split("").map(function(ele){
+    return ele === ele.toUpperCase() ? ele.toLowerCase() :ele.toUpperCase()
+})
+.join("")
+console.log(swapp.toUpperCase())
+console.log(sw)
+//two
+let moznag = nuber.map(function(ele){
+    return +ele
+})
+console.log(moznag)
+// three
+let delit = ignor.split("").map(function(ele){
+    return ele === ele.toUpperCase() ? ele.toLowerCase() :ele.toUpperCase()
+})
+.join("")
+
