@@ -1,11 +1,3 @@
-/* 
-    ! = Not
-    && = and 
-    || = or 
-    ? if true 
-    : if false
-*/
-
 window.onload = function(){
     document.querySelector("h1").style.color = "blue";
 };
@@ -238,11 +230,9 @@ console.log(10 > 100);
 console.log("omer" == "ali");
 console.log(typeof"omer" == typeof"ali");
 /* 
-    ! = Not
+    != Not
     && = and 
     || = or 
-    ? if true 
-    : if fales
 */
 console.log(10 == "10" && 10 > 8 && 10 >10 );
 console.log(10 == "10" || 10 > 80 || 10 >50 );
@@ -315,7 +305,7 @@ else{
     console.log("Mrs")
 }
 
-// ? if true , : if fales
+// ? if true , : if folse
 theGender === "male" ? console.log("mr") : console.log("mrs");
 
 let result = theGender === "male" ?"ms brodn" : "mrs";
@@ -669,6 +659,9 @@ let myEmployees = ["ahmed" , "mazero","elham" , "osama" , "gamal" , "ameer" , "a
 document.write(`<h1>we have ${myAdmins.length} admins</h1> `)
 document.write(`<hr>`)
 
+
+
+
 let cout = 4 ;
 let x = 0
 
@@ -743,9 +736,7 @@ function mykids( userNames = "plase enter your userNames",ages = "plase enter yo
 }
 console.log(mykids("jan"))
 //##############
-
 function Nambers(...number ){
-    //console.log(Araay.isArray(number))
     let results = 0 ; 
     for(let hgh  = 0; hgh < number.length; hgh++ ){
         results += number[hgh]
@@ -753,7 +744,8 @@ function Nambers(...number ){
     return `final result is ${results}`
 }
 console.log(Nambers(10,10,10,10,100,100))
-//############
+//###########################
+
 
 function showInfo(uName = "un" ,age="un", time = 0 , show= "Yes" , ...skills){
     document.write(`<div>`)
@@ -808,7 +800,7 @@ console.log(calculater(10 , 55 ))
 function sayhello(){
     console.log("hello jan") 
 }
-document.getElementById("show").onclick = sayhello ;
+
 //#######
 setTimeout( function (){
     console.log("good jood jap man")
@@ -958,7 +950,23 @@ let moznag = nuber.map(function(ele){
 console.log(moznag)
 // three
 let delit = ignor.split("").map(function(ele){
-    return ele === ele.toUpperCase() ? ele.toLowerCase() :ele.toUpperCase()
-})
+    return isNaN(parseInt(ele)) ? ele  : "";
+}) 
 .join("")
 
+console.log(delit)
+
+
+
+let fillter = ["omar","ahmad","muhammad","ali","jan"]
+let phonnaber =[1,3,4,6,7,8,3,6]
+let fillterfrends = fillter.filter(function(ele){
+    return ele.startsWith("a")?true:false;
+})
+console.log(fillterfrends)
+
+
+let fillternamber = phonnaber.filter(function(ele){
+    return ele % 2 === 0 
+})
+console.log(fillternamber)
