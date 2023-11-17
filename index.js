@@ -1033,3 +1033,40 @@ let jg = remonv.filter(function(ele){
     return `${acc}${current}`
 })
 console.log(jg)
+//##########
+
+//foreach
+
+let allis = document.querySelectorAll("ul li");
+let alldiv = document.querySelectorAll(".content div");
+
+
+allis.forEach(function(elele){
+
+    elele.onclick = function (){
+
+        allis.forEach(function(ele){
+            ele.classList.remove("active")
+        })    
+
+    this.classList.add("active")
+    
+    alldiv.forEach(function(el){
+        el.style.display ="none"
+    });
+    };
+});
+
+// quiz time
+
+let mystring = "1,2,3,ZZ,o,l,r,_,W,e,b,_,S,c,h,o,o,l,2,0,Z"
+let solution = ""
+let hghg = mystring.split("").filter(function(ele){
+    return isNaN(parseInt(ele)) ? ele  : "";
+})
+.join("")
+
+console.log(hghg)
+
+
+
