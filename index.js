@@ -956,17 +956,80 @@ let delit = ignor.split("").map(function(ele){
 
 console.log(delit)
 
+//############
 
-
+// one
 let fillter = ["omar","ahmad","muhammad","ali","jan"]
+//two 
 let phonnaber =[1,3,4,6,7,8,3,6]
+
+// one
 let fillterfrends = fillter.filter(function(ele){
-    return ele.startsWith("a")?true:false;
-})
+    return ele.startsWith("a")?true:false; })
 console.log(fillterfrends)
-
-
+//two
 let fillternamber = phonnaber.filter(function(ele){
     return ele % 2 === 0 
 })
 console.log(fillternamber)
+
+//############
+
+let sentence = "I Love foods code So playing much"
+let foodcode = sentence.split(" ").filter(function(ele){
+    return ele.length <= 4
+})
+.join(" ")
+console.log(foodcode)
+
+
+let instgram = "A13Bs52zzx"
+
+let justnaber = instgram.split("").filter(function(ele){
+    return !isNaN(parseInt(ele)) ;
+})
+.map(function(el){
+    return el * el   ;
+    
+})
+.join("")
+console.log(justnaber);
+
+//############
+
+let reduce= [10,20,30,40]
+
+let adds = reduce.reduce(function(acc , current , index , arr){
+    console.log(`acc   => ${acc}`)
+    console.log(`current element => ${current}`)
+    console.log(`current element index => ${index}`)
+    console.log(`array => ${arr}`)
+    console.log(acc + current)
+
+    console.log(`#################`)
+    
+    return acc + current 
+},10)
+console.log(adds)
+//######
+
+let beegerword = [ "propagande" ,"bule" ,  "green" , "black" , "red" , "red"  ]
+let beg = beegerword.reduce(function(acc , current ){
+    console.log(`acc   => ${acc}`)
+    console.log(`current element => ${current}`)
+    console.log(acc.length > current.length ? acc : current )
+    console.log(`############`)
+    return acc.length > current.length ? acc : current;  
+})
+console.log(beg)
+
+
+
+let  remonv =  ["@","Z","@","O","@","L","@","D","@","I","@","K"]
+let jg = remonv.filter(function(ele){
+    return !ele.startsWith("@")
+})
+.reduce(function(acc,current){
+    return `${acc}${current}`
+})
+console.log(jg)
