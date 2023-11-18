@@ -1059,14 +1059,19 @@ allis.forEach(function(elele){
 
 // quiz time
 
-let mystring = "1,2,3,ZZ,o,l,r,_,W,e,b,_,S,c,h,o,o,l,2,0,Z"
-let solution = ""
+let mystring = "1,2,3,ZZ,o,l,r,_,W,e,b,_,S,c,h,o,o,l,2,0,z"
 let hghg = mystring.split("").filter(function(ele){
     return isNaN(parseInt(ele)) ? ele  : "";
 })
+.filter(function(ele){
+    return !ele.startsWith(",")
+})
+.map(function(ele){
+    return ele === '_' ? ele =(' ') : ele;
+})
 .join("")
-
 console.log(hghg)
 
+// finsh
 
 
