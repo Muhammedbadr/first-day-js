@@ -803,7 +803,7 @@ function sayhello(){
 
 //#######
 setTimeout( function (){
-    console.log("good jood jap man")
+    console.log("good jap man")
 }, 2000);
 //######
 // export 1
@@ -1060,18 +1060,76 @@ allis.forEach(function(elele){
 // quiz time
 
 let mystring = "1,2,3,ZZ,o,l,r,_,W,e,b,_,S,c,h,o,o,l,2,0,z"
-let hghg = mystring.split("").filter(function(ele){
-    return isNaN(parseInt(ele)) ? ele  : "";
-})
-.filter(function(ele){
-    return !ele.startsWith(",")
-})
-.map(function(ele){
-    return ele === '_' ? ele =(' ') : ele;
-})
+let hghg = mystring.split("").filter((ele) => isNaN(parseInt(ele)) ? ele  : "")
+.filter( (ele)=> !ele.startsWith(","))
+.map((ele) => ele === '_' ? ele =(' ') : ele )
 .join("")
 console.log(hghg)
-
 // finsh
 
+//##############
+// Object 
+let theuser = {
+    // properties
+    thename:"muhammad",
+    theage:"33",
+    //methods
+    sayHello: function(){
+        return `hello` ;
+    }
 
+}
+console.log(theuser.thename)
+console.log(theuser.theage)
+console.log(theuser.sayHello(""))
+
+//#########
+
+let theinfo ={
+    thename:"jack",
+    "My contry of":"Russia",
+    "My age after fif Y":25
+}
+console.log(theinfo.thename)
+console.log(theinfo[ "My contry of"])
+console.log(theinfo[ "My age after fif Y"])
+
+//#########
+
+//#########
+let myvar = "contry"
+
+let ABC = {
+    thename:"jan",
+    contry:"palsten",
+}
+console.log(ABC.thename)
+console.log(ABC[myvar])
+//#########
+
+//#########
+let myinfo = {
+    thename:"jan",
+    age:22,
+    skils:["html","css","js"],
+    mared:false, 
+    addrs :{
+        palsten: "Gaza",
+        turky: {
+             first:"ankara"
+             , sicend:"istanbul", 
+        },
+    },
+
+    checkav: function (){
+        if (myinfo.mared === true){
+            return `please wait` 
+        }
+        else {
+            return `welcom to wrok`
+        }
+    }
+}
+console.log(myinfo.skils.join(" | "))
+console.log(myinfo.addrs.turky.first)
+console.log(myinfo.checkav())
