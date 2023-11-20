@@ -1116,8 +1116,8 @@ let myinfo = {
     addrs :{
         palsten: "Gaza",
         turky: {
-             first:"ankara"
-             , sicend:"istanbul", 
+            first:"ankara"
+            , sicend:"istanbul", 
         },
     },
 
@@ -1133,3 +1133,49 @@ let myinfo = {
 console.log(myinfo.skils.join(" | "))
 console.log(myinfo.addrs.turky.first)
 console.log(myinfo.checkav())
+//#####
+
+console.log(this)
+console.log(this === window)
+function saymaney(){
+    console.log(this);
+}
+saymaney()
+//#####
+
+document.getElementById("cl").onclick = function(){
+    console.log(this)
+}
+
+//#####
+let dayorage={
+    age : 15 , 
+    ageinfo:function(){
+        return this.age * 360
+    },
+    
+}
+console.log(dayorage.age);
+console.log(dayorage.ageinfo());
+
+//#####
+let obj = Object.create({})
+obj.car_pries = 555500;
+
+console.log(obj)
+
+console.log(`#`.repeat(16))
+
+let berth = {
+    age : 15 , 
+    info:function(){
+        return this.age * 2
+    },
+    
+}
+let copyobj = Object.create(berth);
+copyobj.age = 25;
+console.log(copyobj)
+console.log(copyobj.age);
+console.log(copyobj.info());
+//#######
