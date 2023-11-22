@@ -1179,3 +1179,53 @@ console.log(copyobj)
 console.log(copyobj.age);
 console.log(copyobj.info());
 //#######
+
+let obj1 ={
+    prop1: 1,
+    meth1: function (){
+        return this.prop1
+    }
+}
+
+let obj2 ={
+    prop2: 2,
+    meth2: function (){
+        return this.prop2
+    }
+}
+
+let targetObject ={
+    prop1:777,
+    prop2:888,
+    prop3:999,
+}
+
+let finalobjet= Object.assign(targetObject,obj1,obj2);
+finalobjet.prop1  = 200 ;
+finalobjet.prop4  = 0 ;
+console.log(finalobjet)
+
+
+let newobject = Object.assign({}, obj1 ,{ prop2:2020 , prop3:2021 ,prop4:2022 , prop5:2023})
+newobject.prop1 = 2019
+console.log(newobject)
+
+//#########
+
+let myidHtml = document.getElementById("mydiv");
+console.log(myidHtml);
+
+let mytagelment = document.getElementsByTagName("P")
+console.log(mytagelment)
+
+let myclassElment = document.getElementsByClassName("my_span")
+console.log(myclassElment)
+
+let myElment = document.querySelector(".special")
+console.log(myclassElment)
+
+let myqueryallElment = document.querySelectorAll(".my_span")
+console.log(myclassElment)
+
+console.log(document.forms[0].one.value)
+console.log(document.links[1].href)
