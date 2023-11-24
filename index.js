@@ -1229,3 +1229,26 @@ console.log(myclassElment)
 
 console.log(document.forms[0].one.value)
 console.log(document.links[1].href)
+
+
+let elemant =document.querySelector(".js")
+
+console.log(elemant.innerHTML)
+console.log(elemant.textContent)
+
+elemant.innerHTML = "Text From <span> main.js </span> File "
+elemant.textContent = "Text From <span> main.js </span> File "
+
+document.images[0].src = "http://127.0.0.1:5500/index.html"
+document.images[0].alt = "alptal"
+document.images[0].title = "photo"
+document.images[0].id = "imges"
+document.images[0].className = "clss"
+
+
+let elemantget =  document.querySelector(".link")
+console.log(elemantget.getAnimations("class"))
+console.log(elemantget.getAnimations("href"))
+
+elemantget.setAttribute("href" , "htpps//google.com")
+elemantget.setAttribute("href" , "htpps//google.com")
