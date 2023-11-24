@@ -1247,8 +1247,40 @@ document.images[0].className = "clss"
 
 
 let elemantget =  document.querySelector(".link")
-console.log(elemantget.getAnimations("class"))
-console.log(elemantget.getAnimations("href"))
+// console.log(elemantget.getAnimations("class"))
+// console.log(elemantget.getAnimations("href"))
 
 elemantget.setAttribute("href" , "htpps//google.com")
 elemantget.setAttribute("href" , "htpps//google.com")
+//#####
+
+console.log(document.getElementsByTagName("h1")[0].attributes)
+
+// let myp = document.getElementsByTagName("h1")[0];
+
+// if (myp.hasAttribute("data-src")){
+//     myp.removeAttribute("data-src");
+// }
+// else{
+//     console.log(`not it found`)
+// }
+
+let mssk = document.getElementsByTagName("h1")[0];
+if (mssk.hasAttribute("data-src")){
+
+  if (  mssk.getAttribute("data-src") === ""){
+        mssk.removeAttribute("data-src");
+    }
+    else{
+        mssk.setAttribute("data-src","trip") 
+    }
+}
+
+if (document.getElementsByTagName("h1")[0].hasAttribute()){
+    console.log(`yes has`)
+
+}
+else {
+        console.log(`no has any att`)
+
+}
