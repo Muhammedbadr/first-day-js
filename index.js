@@ -1275,12 +1275,51 @@ if (mssk.hasAttribute("data-src")){
         mssk.setAttribute("data-src","trip") 
     }
 }
-
-if (document.getElementsByTagName("h1")[0].hasAttribute()){
-    console.log(`yes has`)
-
-}
 else {
-        console.log(`no has any att`)
+    console.log("no has any att")
 
 }
+
+// if (document.getElementsByTagName("div")[0].hasAttribute()){
+//     console.log("yes has")
+// }
+// else {
+//     console.log("no has any att")
+
+// }
+
+
+let myElments = document.createElement("div");
+let myElmentsAatt = document.createAttribute("date-custom");
+let mytext = document.createTextNode ("prodct one ")
+let mycomment = document.createComment("this not knaw")
+
+myElments.className = "trping";
+myElments.setAttributeNode(myElmentsAatt);
+myElments.setAttribute("date-test" , "testing")
+// append comment to elemant
+myElments.appendChild(mycomment)
+// append text to elemant
+myElments.appendChild(mytext)
+
+// print
+document.body.appendChild(myElments)
+console.log(myElments)
+
+//#######
+
+let mydiv = document.createElement("div");
+let myheding = document.createElement("h2");
+let myP = document.createElement("p");
+let myhedingtest
+mydiv.createComment(myh3);
+
+mydiv.appendChild("h3","alkdj;flkjksdljfkjksadjkfjdsfkjksdfjkjskdfjkajskl");
+ 
+mydiv.createComment(myh3);
+mydiv.appendChild("p","alkdj;flkjksdljfkjksadjkfjdsfkjksdfjkjskdfjkajskl");
+ 
+textContent
+mydiv.className= "prodect"
+
+document.body.appendChild(mydiv)
