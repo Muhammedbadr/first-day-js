@@ -1308,18 +1308,82 @@ console.log(myElments)
 
 //#######
 
-let mydiv = document.createElement("div");
-let myheding = document.createElement("h2");
+for (let usb = 0; usb < 10; usb++) {
+
+let mymindiv = document.createElement("div");
+let myheding = document.createElement("h1");
 let myP = document.createElement("p");
-let myhedingtest
-mydiv.createComment(myh3);
 
-mydiv.appendChild("h3","alkdj;flkjksdljfkjksadjkfjdsfkjksdfjkjskdfjkajskl");
- 
-mydiv.createComment(myh3);
-mydiv.appendChild("p","alkdj;flkjksdljfkjksadjkfjdsfkjksdfjkjskdfjkajskl");
- 
-textContent
-mydiv.className= "prodect"
+let myhedingtext = document.createTextNode( ` [${usb + 1}]  Hi how are you doing `)
+let myprgraphtext = document.createTextNode(` [${usb + 1}]  I'm fine , how about yoursulf` )
 
-document.body.appendChild(mydiv)
+mymindiv.className ="prodect"
+
+// add heading text
+myheding.appendChild(myhedingtext);
+// add heading to mymindiv
+mymindiv.appendChild(myheding);
+
+// add pargraph text
+myP.appendChild(myprgraphtext);
+// add pargraph to mynindiv
+mymindiv.appendChild(myP);
+
+
+document.body.appendChild(mymindiv)
+}
+//#####
+
+
+let elematsforhtml = document.querySelector("h4");
+
+console.log(elematsforhtml);
+console.log(elematsforhtml.children)
+console.log(elematsforhtml.children[0])
+console.log(elematsforhtml.childNodes[0])
+
+console.log(elematsforhtml.firstChild)
+console.log(elematsforhtml.lastChild)
+
+console.log(elematsforhtml.firstElementChild)
+console.log(elematsforhtml.lastElementChild)
+
+//############
+
+let mybtn = document.getElementById("btn")
+
+// left btn
+mybtn.onclick = function (){
+    console.log('free')
+}
+// right btn
+mybtn.oncontextmenu = function (){
+    console.log('free')
+}
+// tach on  btn
+mybtn.onmouseleave = function (){
+    console.log('free')
+}
+// scroll
+window.onscroll = function(){
+    console.log("scroll")
+}
+
+//#########
+
+document.links[3].onmouseenter =function(link2){
+    console.log(link2)    
+}
+
+document.links[3].onclick =function(link2){
+    console.log(link2)    
+    link2.preventDefault();
+}
+
+document.forms[3].onsubmit= function(rr){
+    let burger = false;
+    let hamburger = false;
+    if (burger === false || hamburger === false){
+        rr.preventDefault();
+    }
+}
