@@ -1447,8 +1447,39 @@ JSwithCSS.style.width = "1000px"
 
 JSwithCSS.style.cssText = "font-weight: bold ; color:white ; background:black"
 
-JSwithCSS.style.removeProperty("color")
+//JSwithCSS.style.removeProperty("color")
 JSwithCSS.style.setProperty("font-size","40px","important");
 
-console.log(document.styleSheets[0].rules[0].style.removeProperty("line-height"))
-console.log(document.styleSheets[0].rules[0].style.setProperty("background"))
+console.log(document.styleSheets[0].cssRules[0].style.setProperty("height", "10px"))
+console.log(document.styleSheets[0].cssRules[0].style.removeProperty("height"))
+
+//#######
+
+let main = document.getElementById("my_id-thred")
+let createdP = document.createElement("p")
+// before my_id-thred
+main.before("Hi in cors js")
+// after my_id-thred
+main.after("Hi in js")
+// element after my_id-thred 
+main.after(createdP)
+// put in ferst 
+main.prepend("Hello jack , how are you doing")
+main.prepend(createdP)
+// put in last 
+main.append("Hello jack , how are you doing")
+main.append(createdP)
+
+// main.remove() display: 
+
+// #####
+let spasn = document.querySelector(".twos2")
+console.log(spasn.nextElementSibling)
+console.log(spasn.previousElementSibling)
+
+spasn.onclick = function(){
+    spasn.parentElement.style.opacity = '0'
+}
+spasn.onclick = function(){
+    spasn.parentElement.remove()
+}
