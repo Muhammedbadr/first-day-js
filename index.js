@@ -1380,10 +1380,75 @@ document.links[3].onclick =function(link2){
     link2.preventDefault();
 }
 
+let userinput = document.querySelector("[name='username']")
+let ageinput = document.querySelector("[name='age']")
+
+
 document.forms[3].onsubmit= function(rr){
     let burger = false;
     let hamburger = false;
+    
+    if (userinput.value !== "" && userinput.value.length <= 10){
+        burger = true ;
+        }
+    if (ageinput.value !== ""){
+        hamburger = true;
+    }
     if (burger === false || hamburger === false){
         rr.preventDefault();
     }
+
 }
+
+//########
+
+let twos = document.querySelector(".two")
+let ones = document.querySelector(".one")
+window.onload = function (){
+    twos.focus()
+}
+
+ones.onblur = function (){
+    document.getElementById('googlelink').click()
+}
+//########
+//classlist
+
+let elemantzozo = document.getElementById("my_id")
+
+console.log(elemantzozo.classList)
+console.log(typeof elemantzozo.classList)
+
+// srsh in class
+console.log(elemantzozo.classList.contains("osma"))
+console.log(elemantzozo.classList.contains("one"))
+console.log(elemantzozo.classList.contains("my_id"))
+// sarsh in class for how many class
+console.log(elemantzozo.classList.item("2"))
+
+elemantzozo.onclick = function (){
+    this.classList.remove(" three")
+}
+elemantzozo.onclick = function (){
+    this.classList.add("first-div" , "scend-div")
+}
+
+elemantzozo.onclick = function (){
+    this.classList.toggle("ali")
+}
+
+
+let JSwithCSS = document.getElementById("my_id-scend")
+
+JSwithCSS.style.color = "white"
+JSwithCSS.style.background = "red"
+JSwithCSS.style.fontWeight = "bold"
+JSwithCSS.style.width = "1000px"
+
+JSwithCSS.style.cssText = "font-weight: bold ; color:white ; background:black"
+
+JSwithCSS.style.removeProperty("color")
+JSwithCSS.style.setProperty("font-size","40px","important");
+
+console.log(document.styleSheets[0].rules[0].style.removeProperty("line-height"))
+console.log(document.styleSheets[0].rules[0].style.setProperty("background"))
