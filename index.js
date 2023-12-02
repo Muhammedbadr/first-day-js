@@ -1487,7 +1487,42 @@ spasn.onclick = function(){
 
 //##########
 
-let my_P = document.querySelector(".gool")
+let my_P = document.querySelector(".gool").cloneNode(true)
 let mydives = document.querySelector(".dives")
 
+my_P.id = `${my_P.id}-clone`
 mydives.appendChild(my_P)
+
+
+// my_P.onclick = function (){
+//     console.log("Hi jack who are you doing")
+// }
+
+let textP = document.querySelector(".jackboy");
+
+// textP.onclick=mone;
+function mone(){
+    console.log("jack jone")
+}
+
+textP.addEventListener("click" , function(){
+    console.log("jack how are you man")
+})
+textP.addEventListener("click", mone)
+
+
+let copytext = document.querySelector(".copyPargraf");
+
+copytext.onclick=function(){
+    let copyP = copytext.cloneNode(true)
+    copyP.className= 'clone'
+    document.body.appendChild(copyP)
+}
+
+document.addEventListener("click" , function (e){
+    if (e.target.className === 'clone'){
+        console.log("im a clone")
+    }
+})
+
+//qize time
