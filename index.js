@@ -1447,8 +1447,82 @@ JSwithCSS.style.width = "1000px"
 
 JSwithCSS.style.cssText = "font-weight: bold ; color:white ; background:black"
 
-JSwithCSS.style.removeProperty("color")
+//JSwithCSS.style.removeProperty("color")
 JSwithCSS.style.setProperty("font-size","40px","important");
 
-console.log(document.styleSheets[0].rules[0].style.removeProperty("line-height"))
-console.log(document.styleSheets[0].rules[0].style.setProperty("background"))
+console.log(document.styleSheets[0].cssRules[0].style.setProperty("height", "10px"))
+console.log(document.styleSheets[0].cssRules[0].style.removeProperty("height"))
+
+//#######
+
+let main = document.getElementById("my_id-thred")
+let createdP = document.createElement("p")
+// before my_id-thred
+main.before("Hi in cors js")
+// after my_id-thred
+main.after("Hi in js")
+// element after my_id-thred 
+main.after(createdP)
+// put in ferst 
+main.prepend("Hello jack , how are you doing")
+main.prepend(createdP)
+// put in last 
+main.append("Hello jack , how are you doing")
+main.append(createdP)
+
+// main.remove() display: 
+
+// #####
+let spasn = document.querySelector(".twos2")
+console.log(spasn.nextElementSibling)
+console.log(spasn.previousElementSibling)
+
+spasn.onclick = function(){
+    spasn.parentElement.style.opacity = '0'
+}
+spasn.onclick = function(){
+    spasn.parentElement.remove()
+}
+
+
+//##########
+
+let my_P = document.querySelector(".gool").cloneNode(true)
+let mydives = document.querySelector(".dives")
+
+my_P.id = `${my_P.id}-clone`
+mydives.appendChild(my_P)
+
+
+// my_P.onclick = function (){
+//     console.log("Hi jack who are you doing")
+// }
+
+let textP = document.querySelector(".jackboy");
+
+// textP.onclick=mone;
+function mone(){
+    console.log("jack jone")
+}
+
+textP.addEventListener("click" , function(){
+    console.log("jack how are you man")
+})
+textP.addEventListener("click", mone)
+
+
+let copytext = document.querySelector(".copyPargraf");
+
+copytext.onclick=function(){
+    let copyP = copytext.cloneNode(true)
+    copyP.className= 'clone'
+    document.body.appendChild(copyP)
+}
+
+document.addEventListener("click" , function (e){
+    if (e.target.className === 'clone'){
+        console.log("im a clone")
+    }
+})
+
+//qize time
