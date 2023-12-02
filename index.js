@@ -1483,3 +1483,11 @@ spasn.onclick = function(){
 spasn.onclick = function(){
     spasn.parentElement.remove()
 }
+
+
+//##########
+
+let my_P = document.querySelector(".gool")
+let mydives = document.querySelector(".dives")
+
+mydives.appendChild(my_P)
