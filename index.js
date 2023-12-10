@@ -1526,3 +1526,175 @@ document.addEventListener("click" , function (e){
 })
 
 //qize time
+
+// for (let usb = 0; usb < 10; usb++) {
+
+//     let htmldader = document.createElement("div");
+//     htmldader.className = 'header'
+//     let myheding = document.createElement("ul");
+//     let myP = document.createElement("p");
+    
+//     let myhedingtext = document.createTextNode( ` [${usb + 1}]  Hi how are you doing `)
+//     let myprgraphtext = document.createTextNode(` [${usb + 1}]  I'm fine , how about yoursulf` )
+    
+//     htmldader.className ="prodect"
+    
+//     // add heading text
+//     htmldader.appendChild(myhedingtext);
+//     // add heading to htmldader
+//     htmldader.appendChild(myheding);
+    
+//     // add pargraph text
+//     myP.appendChild(myprgraphtext);
+//     // add pargraph to mynindiv
+//     htmldader.appendChild(myP);
+    
+    
+//     document.body.appendChild(htmldader)
+//     }
+//     //#####
+    
+//     window.console.log("jack");
+//     window.document.title="Muhammad"
+
+//     // Get the header element
+// const header = document.querySelector('header');
+
+// // Apply styles using JavaScript
+// header.style.backgroundColor = '#333';
+// header.style.color = '#fff';
+// header.style.padding = '20px 0';
+// header.style.textAlign = 'center';
+
+// // Get the h1 element within the header
+// const h1 = header.querySelector('h1');
+
+// // Apply styles to the h1 element
+// h1.style.marginBottom = '20px';
+
+// // Get the navigation ul element
+// const navUL = header.querySelector('nav ul');
+
+// // Apply styles to the navigation ul
+// navUL.style.listStyle = 'none';
+
+// // Get all list items within the navigation
+// const navItems = navUL.querySelectorAll('li');
+
+// // Apply styles to each list item and its anchor tag
+// navItems.forEach(item => {
+//   item.style.display = 'inline';
+//   item.style.marginRight = '15px';
+//   const anchor = item.querySelector('a');
+//   anchor.style.color = '#fff';
+//   anchor.style.textDecoration = 'none';
+// });
+
+// // Add hover effect to anchor tags
+// navUL.addEventListener('mouseover', function(event) {
+//   if (event.target.tagName === 'A') {
+//     event.target.style.textDecoration = 'underline';
+//   }
+// });
+
+// navUL.addEventListener('mouseout', function(event) {
+//   if (event.target.tagName === 'A') {
+//     event.target.style.textDecoration = 'none';
+//   }
+// });
+//finsh
+//#########
+// alert
+
+// window.alert("muhammad")
+// this.alert("muhammad")
+// alert("muhammad")
+// console.log("muhammad")
+
+// let confingmg = confirm("Are you sure to deleted")
+// console.log(confingmg)
+// if (confingmg === true){
+//     console.log("deleted")
+// }
+// else {
+//     console.log("not deleted")
+// }
+
+// let promptimg = prompt("Are you sure to deleted" , "Enter your Name")
+// console.log(promptimg)
+
+// settime 
+// first way
+setTimeout(() => {
+    console.log(`mark`)
+}, 3000);
+//scend way 
+setTimeout(saymas ,3000)
+    
+function saymas() {
+    console.log(`hi`)
+};
+//thed way
+setTimeout(saymas ,3000, "Ali" , 33)
+    
+function saymas(user,age) {
+    console.log(`hi Mis ${user} and your age enter plese ${age}`)
+};
+//forth way
+let stop = setTimeout(saymas ,6000)
+    
+function saymas() {
+    console.log(`mmmmmmmmmmmmmmmmmmmmmmmmmmmmm`)
+};
+console.log(stop)
+let btms = document.querySelector("button" , [8])
+
+btms.onclick = function()  {
+    clearTimeout(stop)
+}
+//fiveth
+setInterval(function (){
+  //  console.log(`I'm use MakBook`)
+},3000)
+//sixth
+let divlooptime = document.querySelector(".mac")
+function comedown(){
+    divlooptime.innerHTML -= 1
+    if (divlooptime.innerHTML === "0" ){
+        clearInterval(comedownone_one)
+    }
+}
+let comedownone_one = setInterval(comedown, 1000);
+//############
+
+console.log(location)
+
+console.log(location.hostname)
+console.log(location.host )
+
+console.log(location.protocol  )
+
+//console.log(location.reload()  )
+
+//console.log(location.replace("write any location for remove") )
+
+//console.log(location.assign("Enter you location")  )
+
+// open and clons 
+
+setTimeout (function () {
+    // window.open("https://google.com" , "_black" , "width=400 , height=400")
+} ,2000)
+
+// // history
+// - length
+// - back()
+// - forward()
+//#########
+
+// window 
+// - stop
+
+//#########
+
+let myfocusn = window.open("https://google.com" , "" , "width=500,height=500")
