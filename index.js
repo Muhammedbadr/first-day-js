@@ -1697,4 +1697,6 @@ setTimeout (function () {
 
 //#########
 
-let myfocusn = window.open("https://google.com" , "" , "width=500,height=500")
+// let myfocusn = window.open("https://google.com" , "" , "width=400 , height=400")
+
+//scrollTo and form add  scrolBy
