@@ -1690,13 +1690,76 @@ setTimeout (function () {
 // - length
 // - back()
 // - forward()
-//#########
+//######### 
 
 // window 
 // - stop
 
 //#########
 
-// let myfocusn = window.open("https://google.com" , "" , "width=400 , height=400")
+//let myfocusn = window.open("https://google.com" , "" , "width=500,height=500")
 
-//scrollTo and form add  scrolBy
+// window 
+// - scrollTo()
+// - scrollBy()
+
+
+let buttons  = document.querySelector(".up")
+
+window.onscroll = function(){
+    if (window.scrollY >= 600){
+        buttons.style.display = "block"
+    }else{
+        buttons.style.display = "none"
+    }
+}
+
+buttons.onclick = function(){
+    window.scrollTo({
+        left:0,
+        top:0,
+        behavior:"smooth"
+    })
+}
+//#########
+//set
+window.localStorage.setItem("color" , "red")
+window.localStorage.fontWeight="bold"
+window.localStorage["fontsize"] ="66px"
+
+console.log(window.localStorage)
+
+//Get
+console.log(window.localStorage.getItem("color"))
+console.log(window.localStorage.color)
+console.log(window.localStorage["color"])
+
+//remove 
+window.localStorage.removeItem("color" )
+
+//set color in page
+document.body.style.backgroundColor = (window.localStorage.getItem("color"))
+
+
+//#########
+
+let colosr = document.querySelectorAll(".uls li")
+let exe = document.querySelector(".experimat")
+
+colosr.forEach((li) =>{
+        li.addEventListener("click", (e) =>{
+       // console.log(e.currentTarget.dataset.color)
+
+       colosr.forEach((li) => {
+          li.classList.remove("actives")
+       })
+       //add active class to current ele
+       e.currentTarget.classList.add("actives")
+       // add color to local strong 
+       window.localStorage.setItem("color" , e.currentTarget.dataset.color )
+       // change div backgroud color 
+       exe.style.backgroundColor = e.currentTarget.dataset.color;
+
+
+    });
+})
