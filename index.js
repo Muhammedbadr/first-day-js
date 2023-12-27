@@ -1763,3 +1763,41 @@ colosr.forEach((li) =>{
 
     });
 })
+
+//#########
+
+const uuss = {
+    theN:"ja",
+    theA:"0",
+    theC:"Ru",
+    jap:{
+        html:66,
+        css:0
+    },
+    skill:[
+        html,css,js
+    ]
+}
+const{theN:zl , theA:ol , theC:pl="Eg", jap:{html:hls, css:s},skill:[tow,three],
+} = uuss
+
+console.log(zl)
+console.log(ol)
+console.log(pl)
+console.log(hls)
+console.log(s)
+console.log(tow,three)
+
+
+const{html:fj , css:sj } = uuss.jap
+console.log(fj,sj)
+
+showDetails(uuss)
+
+function showDetails({theN:g,theA:u,theC:l}=uuss){
+    console.log(g)
+    console.log(u)
+    console.log(l)
+    
+}
+
