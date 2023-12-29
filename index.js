@@ -1841,8 +1841,8 @@ const uuss = {
         css:0
     },
     skill:[
-        html,css,js
-    ]
+       // html,css,js
+    ],
 }
 const{theN:zl , theA:ol , theC:pl="Eg", jap:{html:hls, css:s},skill:[tow,three],
 } = uuss
@@ -1866,3 +1866,62 @@ function showDetails({theN:g,theA:u,theC:l}=uuss){
     console.log(l)
     
 }
+//############
+//Quze time 
+
+//##############
+
+let chosen = 3;
+let myfevertF = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+  { title: "jack", age: 233, available: false, skills: ["math", "Django"] },
+
+];
+
+const allV =([
+    { title:T1, age:G1, available:A1, skills:[,HC1] ,},
+     { title:T2, age:G2, available:A2, skills:[,HC2] ,},
+    { title:T3, age:G3, available:A3, skills:[,HC3] ,},
+    { title:T3, age:G3, available:A3, skills:[HC4,] ,},
+
+]= myfevertF)
+
+if(chosen === 1){
+    console.log(T1)
+    console.log(G1)
+    A1 === true ? console.log("available"):console.log("not available")
+    console.log(HC1)
+}
+if(chosen === 2){
+    console.log(T2)
+    console.log(G2)
+    A2 === true ? console.log("available"):console.log("not available")
+    console.log(HC2)
+}
+if(chosen === 3){
+    console.log(T3)
+    console.log(G3)
+    A3 === true ? console.log("available"):console.log("not available")
+    console.log(HC3)
+}
+if(chosen === 4){
+    console.log(T4)
+    console.log(G4)
+    A4 === true ? console.log("available"):console.log("not available")
+    console.log(HC4)
+} 
+//##########
+
+// set date tyaps
+const dasts= [1,1,1,2,2,2,3,3,3]
+
+//let myds = new Set([1,1,1,2,2,2,3,3,3])
+//let myds = new Set(dasts)
+let myds = new Set.add(1).add(1).add(1)
+//let myds = new Set([1,1,1,2,2,2,3,3,3])
+
+console.log(dasts)
+console.log(myds)
+console.log(myds.size)
