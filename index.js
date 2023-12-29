@@ -1764,6 +1764,72 @@ colosr.forEach((li) =>{
     });
 })
 
+//#################
+
+//window.localStorage.setItem("color" , "red")
+//window.sessionStorage.setItem("color" , "blue")
+
+document.querySelector(".names").onblur = function (){
+    console.log(this.value)
+    window.localStorage.setItem("input-names" , this.value)
+}
+//###############
+console.log(`###########################`)
+let qq = 1;
+let pp = 1;
+let bv = 1;
+let vv = 1;
+
+let myFkid = ["ahmmad" , "jack" , "aish" , "mrya"];
+[qq, pp,bv,vv,ll="ali jocker"] = myFkid;
+
+console.log(qq)
+console.log(pp)
+console.log(bv)
+console.log(vv)
+console.log(ll)
+
+console.log(`###########################`)
+let [ax, ,ox] = myFkid;
+console.log(ax)
+console.log(ox)
+
+//########
+//Garendm , sis
+console.log(`###########################`)
+let famely = ["dade" , "mom" , "bro" , ["sis" , "Garendf" ,[ "Garendm"]]]
+
+let [, , ,[avs, , [bxs]]] = famely
+
+console.log(avs)
+console.log(bxs)
+console.log(`###########################`)
+//############
+
+let books = "one"
+let notbooks = "tow"
+
+// // Save book value in stach
+// let stach = book ;
+// //Change book value 
+// book = notbook
+// // Change Video Value
+// notbook = stach
+
+let bjj = [books,notbooks]=[notbooks,books] 
+
+console.log(bjj)
+
+//#########
+
+const userinfos = {
+    Thename:"osman",
+    theage:"66",
+    thetitle:"Hi",
+    thcContry:"TR"   
+}
+
+
 //#########
 
 const uuss = {
@@ -1800,4 +1866,3 @@ function showDetails({theN:g,theA:u,theC:l}=uuss){
     console.log(l)
     
 }
-
