@@ -1,3 +1,4 @@
+
 window.onload = function(){
     document.querySelector("h1").style.color = "blue";
 };
@@ -1769,10 +1770,10 @@ colosr.forEach((li) =>{
 //window.localStorage.setItem("color" , "red")
 //window.sessionStorage.setItem("color" , "blue")
 
-document.querySelector(".names").onblur = function (){
-    console.log(this.value)
-    window.localStorage.setItem("input-names" , this.value)
-}
+// document.querySelector(".names").onblur = function (){
+//     console.log(this.value);
+//     window.localStorage.setItem("input-names" , this.value)
+// };
 //###############
 console.log(`###########################`)
 let qq = 1;
@@ -1801,7 +1802,6 @@ let famely = ["dade" , "mom" , "bro" , ["sis" , "Garendf" ,[ "Garendm"]]]
 
 let [, , ,[avs, , [bxs]]] = famely
 
-console.log(avs)
 console.log(bxs)
 console.log(`###########################`)
 //############
@@ -1915,13 +1915,115 @@ if(chosen === 4){
 //##########
 
 // set date tyaps
+// - delit
+// - add
+// - clear
+// - has
+// - size
+
 const dasts= [1,1,1,2,2,2,3,3,3]
 
 //let myds = new Set([1,1,1,2,2,2,3,3,3])
 //let myds = new Set(dasts)
-let myds = new Set.add(1).add(1).add(1)
+let myds = new Set().add(1).add(1).add(1).add(2).add(2).add(2).add(3).add(3).add(3)
 //let myds = new Set([1,1,1,2,2,2,3,3,3])
 
 console.log(dasts)
 console.log(myds)
 console.log(myds.size)
+
+//################
+
+
+let disamber = new Set([1,1,2,2,"A","B"])
+
+console.log(disamber)
+
+let after = disamber.keys();
+
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next());
+
+disamber.forEach((el) => console.log(el))
+
+let myws = new WeakSet([{A:1,B:2}])
+console.log(myws)
+
+//##############
+
+let jacks = Object.create(null)
+console.log(jacks)
+
+let nowobject = {
+    10:"Numbers",
+    "10":"string",
+
+}
+console.log(nowobject[10])
+
+let mymap = new Map()
+mymap.set(10,"Numbers")
+mymap.set("10","string")
+mymap.set(true,"Boolan")
+mymap.set({a:1,b:2},"object")
+mymap.set(function doSomething() {}, "Function")
+
+
+console.log(mymap.get(10))
+console.log(mymap.get("10"))
+
+console.log("#################")
+
+console.log(nowobject)
+console.log(mymap)
+
+
+
+//##################
+
+let mymaps = new Map([
+    [10,"Numbers"],
+    ["name","String"],
+    [false,"bolloing"]
+])
+
+console.log(mymaps)
+
+console.log(mymaps.get(10))
+console.log(mymaps.get("name"))
+console.log(mymaps.get(false))
+//
+console.log(mymaps.has(10))
+console.log(mymaps.has("10"))
+//
+console.log(mymaps.size)
+//
+console.log(mymaps.delete("name"))
+console.log(mymaps.size)
+//
+mymaps.clear()
+console.log(mymaps.size)
+
+//MAP############
+
+let mapuser = {theN:"jack"}
+let myMape = new Map()
+
+myMape.set(mapuser , "object V")
+
+mapuser = null;
+
+console.log(myMape)
+
+console.log("#".repeat(20))
+//WEAKMAP############
+
+let Wmapuser = {theN:"jack"}
+let myWMape = new WeakMap()
+
+myWMape.set(Wmapuser , "object V")
+
+console.log(myWMape)
