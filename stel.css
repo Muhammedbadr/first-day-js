@@ -3,3 +3,100 @@
     line-height: 2;
     height: 20px;
 }
+h1 {
+    margin-bottom: 20px;
+  }
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  .up{
+    background: green;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 34px;
+    right: 20px;
+    display: none;
+  }
+  
+  ul{
+    padding:0 ;
+    margin: 0;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul li{
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  ul li.active ,
+  ul li:hover {
+    opacity: 1;
+  }
+
+ul li:first-child{
+  background-color: red;
+}
+
+ul li:nth-child(2){
+  background-color: green;
+}
+
+ul li:nth-child(3){
+  background-color: orange;
+}
+
+ul li:nth-child(4){
+  background-color: blue;
+}
+
+ul li:nth-child(5){
+  background-color: black;
+}
+.experimat
+{
+  background-color: red;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+}

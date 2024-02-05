@@ -1,3 +1,4 @@
+
 window.onload = function(){
     document.querySelector("h1").style.color = "blue";
 };
@@ -1526,3 +1527,952 @@ document.addEventListener("click" , function (e){
 })
 
 //qize time
+
+// for (let usb = 0; usb < 10; usb++) {
+
+//     let htmldader = document.createElement("div");
+//     htmldader.className = 'header'
+//     let myheding = document.createElement("ul");
+//     let myP = document.createElement("p");
+    
+//     let myhedingtext = document.createTextNode( ` [${usb + 1}]  Hi how are you doing `)
+//     let myprgraphtext = document.createTextNode(` [${usb + 1}]  I'm fine , how about yoursulf` )
+    
+//     htmldader.className ="prodect"
+    
+//     // add heading text
+//     htmldader.appendChild(myhedingtext);
+//     // add heading to htmldader
+//     htmldader.appendChild(myheding);
+    
+//     // add pargraph text
+//     myP.appendChild(myprgraphtext);
+//     // add pargraph to mynindiv
+//     htmldader.appendChild(myP);
+    
+    
+//     document.body.appendChild(htmldader)
+//     }
+//     //#####
+    
+//     window.console.log("jack");
+//     window.document.title="Muhammad"
+
+//     // Get the header element
+// const header = document.querySelector('header');
+
+// // Apply styles using JavaScript
+// header.style.backgroundColor = '#333';
+// header.style.color = '#fff';
+// header.style.padding = '20px 0';
+// header.style.textAlign = 'center';
+
+// // Get the h1 element within the header
+// const h1 = header.querySelector('h1');
+
+// // Apply styles to the h1 element
+// h1.style.marginBottom = '20px';
+
+// // Get the navigation ul element
+// const navUL = header.querySelector('nav ul');
+
+// // Apply styles to the navigation ul
+// navUL.style.listStyle = 'none';
+
+// // Get all list items within the navigation
+// const navItems = navUL.querySelectorAll('li');
+
+// // Apply styles to each list item and its anchor tag
+// navItems.forEach(item => {
+//   item.style.display = 'inline';
+//   item.style.marginRight = '15px';
+//   const anchor = item.querySelector('a');
+//   anchor.style.color = '#fff';
+//   anchor.style.textDecoration = 'none';
+// });
+
+// // Add hover effect to anchor tags
+// navUL.addEventListener('mouseover', function(event) {
+//   if (event.target.tagName === 'A') {
+//     event.target.style.textDecoration = 'underline';
+//   }
+// });
+
+// navUL.addEventListener('mouseout', function(event) {
+//   if (event.target.tagName === 'A') {
+//     event.target.style.textDecoration = 'none';
+//   }
+// });
+//finsh
+//#########
+// alert
+
+// window.alert("muhammad")
+// this.alert("muhammad")
+// alert("muhammad")
+// console.log("muhammad")
+
+// let confingmg = confirm("Are you sure to deleted")
+// console.log(confingmg)
+// if (confingmg === true){
+//     console.log("deleted")
+// }
+// else {
+//     console.log("not deleted")
+// }
+
+// let promptimg = prompt("Are you sure to deleted" , "Enter your Name")
+// console.log(promptimg)
+
+// settime 
+// first way
+setTimeout(() => {
+    console.log(`mark`)
+}, 3000);
+//scend way 
+setTimeout(saymas ,3000)
+    
+function saymas() {
+    console.log(`hi`)
+};
+//thed way
+setTimeout(saymas ,3000, "Ali" , 33)
+    
+function saymas(user,age) {
+    console.log(`hi Mis ${user} and your age enter plese ${age}`)
+};
+//forth way
+let stop = setTimeout(saymas ,6000)
+    
+function saymas() {
+    console.log(`mmmmmmmmmmmmmmmmmmmmmmmmmmmmm`)
+};
+console.log(stop)
+let btms = document.querySelector("button" , [8])
+
+btms.onclick = function()  {
+    clearTimeout(stop)
+}
+//fiveth
+setInterval(function (){
+  //  console.log(`I'm use MakBook`)
+},3000)
+//sixth
+let divlooptime = document.querySelector(".mac")
+function comedown(){
+    divlooptime.innerHTML -= 1
+    if (divlooptime.innerHTML === "0" ){
+        clearInterval(comedownone_one)
+    }
+}
+let comedownone_one = setInterval(comedown, 1000);
+//############
+
+console.log(location)
+
+console.log(location.hostname)
+console.log(location.host )
+
+console.log(location.protocol  )
+
+//console.log(location.reload()  )
+
+//console.log(location.replace("write any location for remove") )
+
+//console.log(location.assign("Enter you location")  )
+
+// open and clons 
+
+setTimeout (function () {
+    // window.open("https://google.com" , "_black" , "width=400 , height=400")
+} ,2000)
+
+// // history
+// - length
+// - back()
+// - forward()
+//######### 
+
+// window 
+// - stop
+
+//#########
+
+//let myfocusn = window.open("https://google.com" , "" , "width=500,height=500")
+
+// window 
+// - scrollTo()
+// - scrollBy()
+
+
+let buttons  = document.querySelector(".up")
+
+window.onscroll = function(){
+    if (window.scrollY >= 600){
+        buttons.style.display = "block"
+    }else{
+        buttons.style.display = "none"
+    }
+}
+
+buttons.onclick = function(){
+    window.scrollTo({
+        left:0,
+        top:0,
+        behavior:"smooth"
+    })
+}
+//#########
+//set
+window.localStorage.setItem("color" , "red")
+window.localStorage.fontWeight="bold"
+window.localStorage["fontsize"] ="66px"
+
+console.log(window.localStorage)
+
+//Get
+console.log(window.localStorage.getItem("color"))
+console.log(window.localStorage.color)
+console.log(window.localStorage["color"])
+
+//remove 
+window.localStorage.removeItem("color" )
+
+//set color in page
+document.body.style.backgroundColor = (window.localStorage.getItem("color"))
+
+
+//#########
+
+let colosr = document.querySelectorAll(".uls li")
+let exe = document.querySelector(".experimat")
+
+colosr.forEach((li) =>{
+        li.addEventListener("click", (e) =>{
+       // console.log(e.currentTarget.dataset.color)
+
+       colosr.forEach((li) => {
+          li.classList.remove("actives")
+       })
+       //add active class to current ele
+       e.currentTarget.classList.add("actives")
+       // add color to local strong 
+       window.localStorage.setItem("color" , e.currentTarget.dataset.color )
+       // change div backgroud color 
+       exe.style.backgroundColor = e.currentTarget.dataset.color;
+
+
+    });
+})
+
+//#################
+
+//window.localStorage.setItem("color" , "red")
+//window.sessionStorage.setItem("color" , "blue")
+
+// document.querySelector(".names").onblur = function (){
+//     console.log(this.value);
+//     window.localStorage.setItem("input-names" , this.value)
+// };
+//###############
+console.log(`###########################`)
+let qq = 1;
+let pp = 1;
+let bv = 1;
+let vv = 1;
+
+let myFkid = ["ahmmad" , "jack" , "aish" , "mrya"];
+[qq, pp,bv,vv,ll="ali jocker"] = myFkid;
+
+console.log(qq)
+console.log(pp)
+console.log(bv)
+console.log(vv)
+console.log(ll)
+
+console.log(`###########################`)
+let [ax, ,ox] = myFkid;
+console.log(ax)
+console.log(ox)
+
+//########
+//Garendm , sis
+console.log(`###########################`)
+let famely = ["dade" , "mom" , "bro" , ["sis" , "Garendf" ,[ "Garendm"]]]
+
+let [, , ,[avs, , [bxs]]] = famely
+
+console.log(bxs)
+console.log(`###########################`)
+//############
+
+let books = "one"
+let notbooks = "tow"
+
+// // Save book value in stach
+// let stach = book ;
+// //Change book value 
+// book = notbook
+// // Change Video Value
+// notbook = stach
+
+let bjj = [books,notbooks]=[notbooks,books] 
+
+console.log(bjj)
+
+//#########
+
+const userinfos = {
+    Thename:"osman",
+    theage:"66",
+    thetitle:"Hi",
+    thcContry:"TR"   
+}
+
+
+//#########
+
+const uuss = {
+    theN:"ja",
+    theA:"0",
+    theC:"Ru",
+    jap:{
+        html:66,
+        css:0
+    },
+    skill:[
+       // html,css,js
+    ],
+}
+const{theN:zl , theA:ol , theC:pl="Eg", jap:{html:hls, css:s},skill:[tow,three],
+} = uuss
+
+console.log(zl)
+console.log(ol)
+console.log(pl)
+console.log(hls)
+console.log(s)
+console.log(tow,three)
+
+
+const{html:fj , css:sj } = uuss.jap
+console.log(fj,sj)
+
+showDetails(uuss)
+
+function showDetails({theN:g,theA:u,theC:l}=uuss){
+    console.log(g)
+    console.log(u)
+    console.log(l)
+    
+}
+//############
+//Quze time 
+
+//##############
+
+let chosen = 3;
+let myfevertF = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+  { title: "jack", age: 233, available: false, skills: ["math", "Django"] },
+
+];
+
+const allV =([
+    { title:T1, age:G1, available:A1, skills:[,HC1] ,},
+     { title:T2, age:G2, available:A2, skills:[,HC2] ,},
+    { title:T3, age:G3, available:A3, skills:[,HC3] ,},
+    { title:T3, age:G3, available:A3, skills:[HC4,] ,},
+
+]= myfevertF)
+
+if(chosen === 1){
+    console.log(T1)
+    console.log(G1)
+    A1 === true ? console.log("available"):console.log("not available")
+    console.log(HC1)
+}
+if(chosen === 2){
+    console.log(T2)
+    console.log(G2)
+    A2 === true ? console.log("available"):console.log("not available")
+    console.log(HC2)
+}
+if(chosen === 3){
+    console.log(T3)
+    console.log(G3)
+    A3 === true ? console.log("available"):console.log("not available")
+    console.log(HC3)
+}
+if(chosen === 4){
+    console.log(T4)
+    console.log(G4)
+    A4 === true ? console.log("available"):console.log("not available")
+    console.log(HC4)
+} 
+//##########
+
+// set date tyaps
+// - delit
+// - add
+// - clear
+// - has
+// - size
+
+const dasts= [1,1,1,2,2,2,3,3,3]
+
+//let myds = new Set([1,1,1,2,2,2,3,3,3])
+//let myds = new Set(dasts)
+let myds = new Set().add(1).add(1).add(1).add(2).add(2).add(2).add(3).add(3).add(3)
+//let myds = new Set([1,1,1,2,2,2,3,3,3])
+
+console.log(dasts)
+console.log(myds)
+console.log(myds.size)
+
+//################
+
+
+let disamber = new Set([1,1,2,2,"A","B"])
+
+console.log(disamber)
+
+let after = disamber.keys();
+
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next().value);
+console.log(after.next());
+
+disamber.forEach((el) => console.log(el))
+
+let myws = new WeakSet([{A:1,B:2}])
+console.log(myws)
+
+//##############
+
+let jacks = Object.create(null)
+console.log(jacks)
+
+let nowobject = {
+    10:"Numbers",
+    "10":"string",
+
+}
+console.log(nowobject[10])
+
+let mymap = new Map()
+mymap.set(10,"Numbers")
+mymap.set("10","string")
+mymap.set(true,"Boolan")
+mymap.set({a:1,b:2},"object")
+mymap.set(function doSomething() {}, "Function")
+
+
+console.log(mymap.get(10))
+console.log(mymap.get("10"))
+
+console.log("#################")
+
+console.log(nowobject)
+console.log(mymap)
+
+
+
+//##################
+
+let mymaps = new Map([
+    [10,"Numbers"],
+    ["name","String"],
+    [false,"bolloing"]
+])
+
+console.log(mymaps)
+
+console.log(mymaps.get(10))
+console.log(mymaps.get("name"))
+console.log(mymaps.get(false))
+//
+console.log(mymaps.has(10))
+console.log(mymaps.has("10"))
+//
+console.log(mymaps.size)
+//
+console.log(mymaps.delete("name"))
+console.log(mymaps.size)
+//
+mymaps.clear()
+console.log(mymaps.size)
+
+//MAP############
+
+let mapuser = {theN:"jack"}
+let myMape = new Map()
+
+myMape.set(mapuser , "object V")
+
+mapuser = null;
+
+console.log(myMape)
+
+console.log("#".repeat(20))
+//WEAKMAP############
+
+let Wmapuser = {theN:"jack"}
+let myWMape = new WeakMap()
+
+myWMape.set(Wmapuser , "object V")
+
+console.log(myWMape)
+
+//###########
+
+console.log(Array.from("Mohammad"))
+
+console.log(Array.from("123456" , function (nam) {
+    return +nam + +nam 
+}))
+console.log(Array.from("123456" ,  (nam) =>+nam + +nam ))
+
+let myarray = [1,1,1,2,2,2,3,4,5]
+///// first way
+// let myset = new Set(myarray) ;
+// console.log(Array.from(myset))
+///// secnd way / this way in futuer  
+console.log([...new Set(myarray)])
+
+//#############
+
+function af () {
+    return Array.from(arguments)
+}
+console.log(af("ali","jack","hari",1,2,3,4))
+
+//#############
+
+let myA = [10,20,30,40,50,60,"A","B"]
+
+//myA.copyWithin(3)//  [10,20,30,B,50,60,"A","B"]
+//myA.copyWithin(3,7)//  [10,20,30,B,50,"b","A","B"]
+//myA.copyWithin(5,-1)//  [10,20,30,B,50,"b","A","B"]
+myA.copyWithin(1 , -2)//  [10,"a","b",40,50,60,"A","B"]
+//myA.copyWithin()//  [10,20,30,B,50,60,"A","B"]
+
+
+console.log(myA)
+
+//################
+// Some.Arry
+
+let lata = [2,3,4,5,6,7,8,]
+
+let myNa = 5;
+
+let check = lata.some(function (e){
+    return e > this;
+}, myNa)
+// let check = lata.some((e) => e > 5)
+console.log(check)
+
+function checkV(arr , val){
+    return arr.some(
+        function (e) {
+            return e === val
+        }
+    )
+}
+console.log(checkV(lata,20))
+console.log(checkV(lata,5))
+
+//###########
+
+let renge = {
+    min:10,
+    max:20
+}
+let totel = lata.some(function(e){
+    return e >= this.min && e <= this.max
+},renge)
+
+console.log(totel)
+
+//############
+// Evrey.Arry
+
+const locations = {
+    20: "Place1",
+    30: "Place2",
+    100: "Place3",
+    40: "Place4",
+};
+  
+  
+let mainLocation = 15 ;
+
+let LocationArry = Object.keys(locations)
+console.log(LocationArry)
+
+let LocationArryNaambers = LocationArry.map((n)=> +n)
+console.log(LocationArryNaambers)
+
+let checks = LocationArryNaambers.every(function(e){
+    return e > this
+}, mainLocation)
+console.log(checks)
+
+//#################
+
+console.log("checks")
+console.log(..."checks")
+console.log([..."checks"])
+
+
+let allnamber=[1,2,3,4,5,6,7,8]
+console.log(allnamber)
+
+let aparmint=[1,2,3,4,5,6,7,8]
+let room=[1,2,3,4,5,6,7,8]
+aparmint.push(...room)
+console.log(aparmint)
+
+
+let mykid = [1,2,3,4,5,6,7,8]
+console.log(Math.max(...mykid))
+
+
+let objone = {
+    a:1,
+    b:2,
+}
+let objtwo = {
+    c:3,
+    d:4,
+}
+console.log({...objone , ...objtwo })
+//###################
+
+let sevintin = [10,30,10,20]
+let sextin = [30,20,10]
+
+console.log(Math.max(...sevintin)*[...sevintin,...sextin].length)
+
+//###################
+//reguler
+// i
+// g 
+// m
+let mystrings = "HI Moun , i'm from moun"
+
+console.log(mystrings.match(/moun|i/ig))
+
+
+let regname = "123456789"
+let reg = /[0-3]/g;
+console.log(regname.match(reg))
+
+let notregname = "123456789"
+let notreg = /[^0-3]/g;
+console.log(notregname.match(notreg))
+
+let notnam = "12@345@67&8*9("
+let regnonam = /[^0-9]/g;
+console.log(notnam.match(regnonam))
+
+let pareets = "m1 ma2 mab3 mab4d";
+let pareetchosie = /mab[0-4]d/g;
+console.log(pareets.match(pareetchosie))
+
+let Email = "1qqqqqq22@gmail.com";
+let cerrctedEmail = /[0-~]gmail.com/ig;
+console.log(Email.match(cerrctedEmail))
+
+
+let smallhruf = "A32sdsa121212)(&%#$%3ACV";
+let changesmall = /[a-z]/g;
+let changnotesmall = /[^a-z]/g;
+let changeCapitl = /[A-Z]/g;
+let changenotCapitl = /[^A-Z]/g;
+let haveintoS = /[adc]/g;
+let havenSinto = /[^adc]/g;
+let allstring = /[a-zA-Z0-9]/g;
+let everstring = /[^a-zA-Z0-9]/g;
+
+console.log(smallhruf.match(changesmall))
+console.log(smallhruf.match(changnotesmall))
+console.log(smallhruf.match(changeCapitl))
+console.log(smallhruf.match(changenotCapitl))
+console.log(smallhruf.match(haveintoS))
+console.log(smallhruf.match(havenSinto))
+console.log(smallhruf.match(allstring))
+console.log(smallhruf.match(everstring))
+
+let allkey = "zkljdsjfj;ajf $$$$ @@@@@@@@.com mukhamadd@g.net mukhamadd@g.com"
+
+let dot = /./g;
+let word = /\w/g;
+let notallword = /\W/g;
+let emailw = /\w@\w.(com|net)/g;
+
+console.log(allkey.match(dot))
+console.log(allkey.match(word))
+console.log(allkey.match(notallword))
+console.log(allkey.match(emailw))
+
+let spand = "span 57span @span@ span22"
+// let sershspanfirst = /\bspan/ig
+// let sershspanlast = /span\b/ig
+let sershspanfirst = /\bspan|span\b/ig
+console.log(/\bspan|span\b/ig.test("span"))
+console.log(/\bspan|span\b/ig.test("ali"))
+console.log(spand.match(sershspanfirst))
+//console.log(spand.match(sershspanlast))
+
+
+
+//Emails
+let mails ="o@nn . sa osama@gmail.com - elzero@gmail.net , osama@mail.ru" ;
+let mailsRe =/\w+@\w+.\w+/ig;
+console. log (mails.match(mailsRe)) ;
+//Nambers
+let oo ="0110 00 00222 44443 3033" ;
+let chosenzro =/0\d*0/ig;
+console. log (oo.match(chosenzro)) ;
+//url
+let urls = "https://youtube.com/ http://www.youtube.com youtube.tr"
+let editUrl = /(https?:\/\/)?(www.)?\w+.\w+/ig;
+console.log(urls.match(editUrl))
+
+//text 
+
+let serials =" s123s s1234s s12345s   s101010s";
+let sthreeNs = /s\d{3}s/ig;
+let sforORfivNs = /s\d{4,5}s/ig
+let sforORmoreNs = /s\d{4,}s/ig
+console.log(serials.match(sthreeNs))
+console.log(serials.match(sforORfivNs))
+console.log(serials.match(sforORmoreNs))
+
+//#############e
+// $ => End , With Something
+// ^ => Start With Something
+// ?= Followed , By , Something
+// ?! •Not Followed Something
+
+let test ="osama@gmail.com" ;
+let test2 ="33osama@gmail.com" ;
+let test3 ="1osman 2jack 3gorla 5muhammad 6muhammad" ;
+console.log( /com$/ig.test(test))
+console.log( /^os/ig.test(test))
+console.log( /^\d/ig.test(test2))
+
+console.log(test3.match(/\d\w{4}(?=n)/ig))
+console.log(test3.match(/\d\w{4}(?!n)/ig))
+console.log(test3.match(/\d\w{7} /ig))
+
+let txt = "We Love @ Programming @ And Becaus"
+console.log(txt.replace( "@", "JavaScript"));
+console.log(txt.replaceAll( "@", "JavaScript"));
+let re = /@/ig
+console.log(txt.replaceAll( re ,"JavaScript"));
+console.log(txt.replaceAll( /@/ig ,"JavaScript"));
+//####
+
+
+document.getElementById("regiser").onsubmit = function() {
+    let phoninput = document.getElementById("phone").value
+    let phonere = /\d{3}\s\d{3}-\d{3}/ig
+    let testphone = phonere.test(phoninput)
+    console.log(testphone)
+    if (testphone === false){
+        return false
+    }
+    return true
+}
+
+
+// quiz 
+let url1 = 'elzero.org';
+let url2 = 'http://elzero.org';
+let url3 = 'https://elzero.org';
+let url4 = 'https://www.elzero.org';
+let url42 = 'https://elzero.com';
+let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
+
+let Rub= /(https?:\/\/)?(www\.)?.\w+.\w+()?/ig; // Write Your Pattern Here
+
+
+console.log(url1.match(Rub));
+console.log(url2.match(Rub));
+console.log(url3.match(Rub));
+console.log(url4.match(Rub));
+console.log(url42.match(Rub));
+console.log(url5.match(Rub));
+
+
+//###############
+// OOP
+// constructur function 
+
+class User {
+    static cont = 0 ;
+    constructor(name, years, selery) {
+        this.na = name || "None";
+        this.ya = years + 1 ;
+        this.se = selery < 5000  ? selery + 1003 : selery ;
+        this.msg = function(){
+            return `Hello ${this.na} , you start ${this.ya} , and your selery ${this.se}  `
+        }
+        User.cont++;
+    }
+    //mathod
+    writeMsg(){
+        return `Hello ${this.na} , you start ${this.ya} , and your selery ${this.se}  `
+    }
+    updateName(newName) {
+        this.na = newName;
+    }
+    static cnontnamber (){
+        return `${this.cont}sdjlfa`
+    }
+}
+
+let fistprtion = new User("ali",2018,4000)
+let scendprtion = new User("",2019,6000)
+let Thirdprtion = new User("muhommad",2020,7000)
+
+console.log(fistprtion.na)
+fistprtion.updateName("jack")
+console.log(fistprtion.na)
+
+console.log(fistprtion.ya)
+console.log(fistprtion.se)
+console.log(fistprtion.msg())
+console.log(fistprtion.writeMsg())
+console.log(User.cnontnamber())
+
+
+console.log("################")
+
+console.log(scendprtion.na)
+console.log(scendprtion.ya)
+console.log(scendprtion.se)
+console.log(scendprtion.msg)
+console.log(scendprtion.writeMsg)
+
+console.log("################")
+
+console.log(fistprtion instanceof User)
+console.log(fistprtion.constructor === User)
+
+//######
+console.log("#".repeat(15))
+
+class Users {
+    constructor(name, years) {
+        this.na = name || "None";
+        this.ya = years ;
+    }
+    sayhellojari(){
+        return `hello ${this.na}`
+    }
+}
+class Admin extends Users{
+    constructor(name, years, days ) {
+        super(name , years);
+        this.d = days ;
+    }   
+    updateN(updateNaames) {
+        this.na = updateNaames;
+    }
+}
+let fistUser = new Users("ali",2018); 
+console.log(fistUser.na)
+console.log(fistUser.ya)
+console.log(fistUser.sayhellojari())
+
+console.log("#".repeat(15))
+
+let fistAdmins = new Admin("ali",2018,1);
+
+console.log(fistAdmins.na)
+console.log(fistAdmins.ya)
+console.log(fistAdmins.d)
+fistAdmins.updateN("jolore")
+console.log(fistAdmins.sayhellojari())
+
+
+//##########
+
+
+class saler{
+    #sa;
+
+    constructor(name, years, salire ) {
+        this.na = name || "None";
+        this.ya = years ;
+        this.#sa = salire
+    }   
+    getsa(){
+        return parseInt(this.#sa)
+    }
+    
+}
+let fistseleri = new saler("ali",2018,"10$");
+
+console.log(fistseleri.na)
+console.log(fistseleri.ya)
+console.log(fistseleri.getsa() )
+let contre = "TL"
+console.log(fistseleri.getsa() * 30,`${contre}`)
+
+
+//###########3
+
+//prototype
+let prototype = "Zoldik"
+console.log(String.prototype)
+
+
+class usersone{
+    constructor(name, years, salire ) {
+        this.na = name || "None";
+        this.ya = years ;
+    }   
+}
+
+let user1 = new usersone("muhammad",2024);
+console.log(user1.na)
+console.log(user1.ya)
+console.log(usersone.prototype)
+usersone.prototype.sayHello= function() {
+    return `welcom ${this.na}` 
+}
+Object.prototype.love = "Hacker"
+
+String.prototype.UpsiAddBeforANDAfter = function (vall){
+    return `.${this}.`;
+};
+let strings = "zoldik";
+//######
+
+const myObject = {
+     agh : 1,
+     bgh : 2,
+};
+Object.defineProperty(myObject, "c" ,{
+    writable: true,
+    enumerable:  true,
+    configurable: true,
+    value: 3,
+
+});
+
+myObject.c= 100;
+
+for (let prop in myObject) {
+console. log(prop, myObject[prop])};
+
+console. log(myObject);
