@@ -2467,7 +2467,6 @@ Object.defineProperty(myObject, "c" ,{
     enumerable:  true,
     configurable: true,
     value: 3,
-
 });
 
 myObject.c= 100;
@@ -2476,3 +2475,106 @@ for (let prop in myObject) {
 console. log(prop, myObject[prop])};
 
 console. log(myObject);
+
+
+//#######
+
+
+const mySecedObject = {
+    a : 1,
+    b : 2,
+};
+
+Object.defineProperties(mySecedObject ,{
+    c : {configurable: true,
+    value: 3,},
+})
+Object.defineProperties(mySecedObject ,{
+    d : {configurable: true,
+    value: 4,},
+})
+Object.defineProperties(mySecedObject ,{
+    f : {configurable: true,
+    value: 5,},
+})
+console.log(mySecedObject)
+console.log(Object.getOwnPropertyDescriptor(mySecedObject , "d"))
+console.log(Object.getOwnPropertyDescriptors(mySecedObject ))
+
+
+//####################
+// date and time 
+
+let newdate = new Date()
+console.log(newdate)
+
+console.log(Date.now()) // 1000 mill === 1 scend
+
+let scends = Date.now() / 1000 
+console.log(`scend ${scends}`)
+
+let mintes = scends / 60 
+console.log(`mintes ${mintes}`)
+
+let hour = mintes / 60 
+console.log(`hour ${hour}`)
+
+let days = hour / 24 
+console.log(`days ${hour}`)
+
+let years = days / 365 
+console.log(`years ${years}`)
+
+let scsen = years / 4 
+console.log(`scsen ${scsen}`)
+console.log(54 / 4)
+
+//####
+
+let datetoday = new Date()
+let birthday  = new Date("Jun 15 , 2007")
+
+let diffe = birthday - datetoday
+
+console.log(diffe)
+console.log(diffe / 360)
+
+let getTime = new Date()
+
+console.log(getTime.getTime())
+console.log(getTime.getDate())
+console.log(getTime.getFullYear())
+console.log(getTime.getMonth())
+console.log(getTime.getDay())
+console.log(getTime.getHours())
+console.log(getTime.getMinutes())
+console.log(getTime.getSeconds())
+
+//#####
+
+// setTime(Milliseconds)
+// setDate() => Day Of The Month [Negative And Positive]
+// setFullYear(year, month => Optional [0-11], day => Optional [1-31]) setMonth(Month [0-11], Day => Optional [1-31]) [Negative And Positive]
+// setHours(Hours [0-23], Minutes => Optional [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+// setMinutes(Minutes [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+// setSeconds(Seconds => [0-59], MS => Optional [0-999])
+
+let mydate = new Date("06-15-2007");
+console.log(mydate)
+
+let mydatescendway = new Date("2007-10-25");
+console.log(mydatescendway)
+
+
+let yearwithhour = new Date(1982,9,25,2,10,0);
+console.log(yearwithhour)
+
+console.log(Date.parse("Jun 15 2007"))
+
+let startMed = new Date()
+
+
+let endMstar = new Date()
+
+let endwithstart = endMstar - startMed ;
+console.log(endwithstart)
